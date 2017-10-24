@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+
+  <link rel="stylesheet" href="thrive.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="landingmobile">
+    <div class="topmobile1">
+      <div class="header1">
+        <h1 class="thriveheader">T H R I V E</h1>
+        <p class="conscious" style="font-size: 12px;">C O N S C I O U S F A S H I O N</p>
+      </div>
+    </div>
+    <div class="middlemobile1">
+        <h2 class="ingress">Scandinavias leading concept store for organic, environmental friendly, fairtrade, sustainable and animal friendly fashion.  </h2>
+    </div>
+    <div class="bottommobile1">
+
+      <div class="buttonwrap">
+        <svg class="webshopbtn" width="240px" height="56px" viewBox="0 0 240 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+            <desc>Created with Sketch.</desc>
+            <defs>
+                <rect id="path-1" x="0" y="0" width="232" height="48"></rect>
+            </defs>
+            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Knapp">
+                    <g class="Group">
+                        <rect class="rectbackground" stroke="#071D2B" stroke-width="4" x="10" y="10" width="228" height="44"></rect>
+                            <rect onclick="document.getElementById('page').scrollIntoView({behavior: 'smooth'});" class="webshop_foreground" stroke="#071D2B" stroke-width="4" x="2" y="2" width="228" height="44" fill="#EEEEEE">
+
+                              </rect>
+
+                              <text class="texthelpme" font-family="Futura-Bold, Futura" font-size="14" font-weight="bold" line-spacing="48" letter-spacing="2.625" fill="#071D2B">
+
+                                  <tspan class="fixalign" x="21.4435" y="30">GO TO WEBSHOP </tspan>
+                                  <tspan x="194.9315" y="30" font-family="LucidaGrande-Bold, Lucida Grande">→</tspan>
+                              </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+
+
+        <svg class="learnmorebtn" onclick="document.getElementById('').scrollIntoView({behavior: 'smooth'});" width="240px" height="56px" viewBox="0 0 240 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+            <desc>Created with Sketch.</desc>
+            <defs>
+                <rect id="path-1" x="0" y="0" width="232" height="48"></rect>
+            </defs>
+            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Knapp">
+                    <g class="Group">
+                        <rect class="learnmore_background" stroke="#071D2B" stroke-width="4" x="10" y="10" width="228" height="44"></rect>
+                            <rect class="learnmore_foreground" stroke="#071D2B" stroke-width="4" x="2" y="2" width="228" height="44" fill="#EEEEEE">
+
+                              </rect>
+
+                              <text class="texthelpme_2" font-family="Futura-Bold, Futura" font-size="14" font-weight="bold" line-spacing="48" letter-spacing="2.625" fill="#071D2B">
+
+                                  <tspan class="fixalign1" x="20%" y="30">LEARN MORE</tspan>
+                                  <tspan x="194.9315" y="30" font-family="LucidaGrande-Bold, Lucida Grande">↓</tspan>
+                              </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+
+      </div>
+    </div>
+
+    </div>
+
+
+
+<script>
+
+$(function() {
+    $(".webshop_foreground, .texthelpme").mousedown(function() {
+      $(".webshop_foreground").toggleClass("webshop_foreground_click");
+      $(".texthelpme").toggleClass("texthelpme_click");
+
+});
+
+
+  $(".learnmore_foreground, .texthelpme_2").mousedown(function() {
+      $(".learnmore_foreground").toggleClass("learnmore_foreground_click");
+      $(".texthelpme_2").toggleClass("texthelpme_2_click");
+
+  });
+
+  $(".learnmore_foreground, .texthelpme_2").mouseup(function() {
+      $(".learnmore_foreground").toggleClass("learnmore_foreground_click");
+      $(".texthelpme_2").toggleClass("texthelpme_2_click");
+
+  });
+});
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
