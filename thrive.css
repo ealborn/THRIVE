@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   width: 100vw;
@@ -22,12 +26,15 @@ h2 {
 }
 
 .section_1 {
-  perspective: 1px;
-  overflow-x: auto;
-  overflow-y: hidden;
+
   background-color: #0d1814;
-  background-image: url(heroimage.png);
+  background-image: url(heroimagefull.png);
   background-blend-mode: luminosity;
+  background-repeat: no-repeat;
+  /*background-position:0px 0px;*/
+
+  background-position: 1% 1%;
+   background-size: cover;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -35,7 +42,7 @@ h2 {
   align-content: center;
   margin: 0;
   background-attachment: fixed;
-
+  transition: .2s ease;
 }
 
 .topmobile1 {
@@ -73,40 +80,45 @@ h2 {
   width: 100vw;
   display: flex;
   flex-direction: column;
+
   transition: 1s ease-out:
 }
 
 .ingress {
   font-family: Parabola;
   text-align: left;
-
   font-size: 36px;
   line-height: 1.3;
   margin-left: 34px;
   color: white;
+}
 
-
+#ska, #vi, #animera {
+  color: #76C8A8;
 }
 
 .bottommobile1 {
   height: 40vh;
   display: flex;
-  flex-direction: column;
-  align-content: center;
+  width: 100vw;
+  align-items: flex-end;
   justify-content: center;
+  position: relative;
+
 }
 
 .triangle {
   align-self: center;
 }
 .buttonwrap {
-  height: 300px;
+  height: 20vh;
   display:flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
-  
+  margin-bottom: 43px;
+
+
 }
 
 /*Section 2 follows*/
@@ -116,11 +128,6 @@ h2 {
   width: 100vw;
   background-color: #76C8A8;
 }
-
-
-
-
-
 
 .slide1wrap {
   width: 100vw;
@@ -136,4 +143,57 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*section 3 follows*/
+
+.section_3 {
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+}
+
+/*Section 4 follows*/
+
+.section_4 {
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.lookbook {
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+  padding-top: 20px;
+
+}
+
+.lookbook_top {
+  width: 189px;
+  height: 284px;
+  background-image: url(section_4_upper_right.png);
+  margin-left: 45%;
+
+  margin-bottom: 10px;
+}
+
+.lookbook_middle {
+  width: 291px;
+  height: 201px;
+  background-image: url(./section_4_middle.png);
+
+}
+
+.lookbook_bottom {
+  width: 258px;
+  height: 172px;
+  background-image: url(./section_4_bottom.png);
+  background-repeat: no-repeat;
+  background-position: 20px 60px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
 }

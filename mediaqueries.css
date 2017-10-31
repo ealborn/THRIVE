@@ -1,0 +1,21 @@
+@media screen and (max-width: 750px) {
+  .section_1 {
+    background-color: #0d1814;
+    background-image: url(heroimagefull.png);
+    background-blend-mode: luminosity;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+     background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0;
+    background-attachment: fixed;
+
+  }
+
+}
