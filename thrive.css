@@ -10,16 +10,17 @@ body {
 }
 @font-face {
   font-family: 'Parabola';
-  src: url('../momentiris/thrive/Fonts/parabolaweb.ttf');
+  src: url('Fonts/parabolaweb.ttf');
 }
 
 @font-face {
   font-family: 'FuturaLight';
-  src: url('../momentiris/thrive/Fonts/futura_light.ttf');
+  src: url('Fonts/futura_light.ttf');
 }
+
 @font-face {
-  font-family: 'FuturaMedium';
-  src: url('../momentiris/thrive/Fonts/Futura_Medium.otf');
+   font-family: 'futura_bold';
+   src: url('Fonts/futura_bold.ttf');
 }
 
 h1 {
