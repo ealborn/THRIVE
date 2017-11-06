@@ -5,160 +5,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
-
   <link rel="stylesheet" href="thrive.css">
   <link rel="stylesheet" href="animations.css">
   <link rel="stylesheet" href="mediaqueries.css">
-  <link rel="stylesheet" type="text/css" href="fullpage.js/jquery.fullPage.css" />
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 
-  <script>
-  $(document).ready(function() {
-  	$('#fullpage').fullpage({
-  		autoScrolling: false,
-      fitToSection: false,
-
-
-
-  	});
-  });
-  </script>
-
-
-  <script type="text/javascript" src="fullpage.js/jquery.fullPage.min.js"></script>
+<!-- the div "wrapall" wraps everything and will always be the last closing div in the end of the html -->
 
 <div class="wrapall">
+
+  <!-- Section 1 starts here -->
   <div class="section_1">
-    <div class="topmobile1">
-      <div class="header1">
-        <h1 class="thriveheader">T H R I V E</h1>
-        <p class="conscious">C O N S C I O U S F A S H I O N</p>
-      </div>
-    </div>
+    <div class="framelogobox_top">
+      <div class="framelogobox_right">
+        <div class="framelogobox_bottom">
+          <div class="framelogobox_left">
 
+  <div class="middlemobile1">
+        <h2 class="ingress">Skandinaviens <br>ledande<br> konceptbutik <br><h2 class="ingress green">inom ekologiskt, miljövänligt, rättvist,<br> hållbart och<br> veganskt</h2></h2><h2 class="ingress"> mode.</h2>
+  </div>
 
-    <div class="middlemobile1">
-        <h2 id="hej" class="ingress">Scandinavias leading</h2> <h2 id="nu" class="ingress"> concept store for</h2> <h2 id="ska" class="ingress" style="color:">organic, environmental,</h2> <h2 id="vi" class="ingress">fairtrade, sustainable and</H2><h2 id="animera" class="ingress"> animal friendly</h2>
-        <h2 id="fashion" class="ingress">fashion.</h2>
-    </div>
-    <div class="bottommobile1">
-
-      <!-- <svg class="triangle" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
-        <path id="triangle" class="trianglepath" d="M11.5 275l46.7-80.5 92-158.7 94.5 162.7L289 275H11.6zM243 196H57.5m92.7.4V275" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="7" stroke-miterlimit="10"/>
-      </svg> -->
-
-
-      <div class="buttonwrap">
-        <svg class="svgbuttons" id="knapp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244 60" width="240px" height="56px">
-          <path id="skugga" class="skugga" d="M234 10h8v48H10v-7.9" width="228px" height="44px"/>
-          <path id="rektangel" class="rektangel" d="M2 2h232v48H2z" width="228" height="44"/>
-          <path id="pil" class="pil" d="M198.5 26.9h8.2v-2l2 2-2 2v-2"/>
-          <path class="txt" d="M29.7 26.07h5.44a15.2 15.2 0 0 1-.07 1.53 5.4 5.4 0 0 1-.28 1.27 5.1 5.1 0 0 1-.8 1.46 4.65 4.65 0 0 1-1.2 1.06 5.55 5.55 0 0 1-1.5.6 6.43 6.43 0 0 1-1.7.2 6 6 0 0 1-2.3-.4 5.06 5.06 0 0 1-1.8-1.2 5.17 5.17 0 0 1-1.2-1.8 6.14 6.14 0 0 1-.4-2.3 6.2 6.2 0 0 1 .4-2.3 5 5 0 0 1 1.1-1.75 5.16 5.16 0 0 1 1.76-1.14 6.3 6.3 0 0 1 2.3-.4 5.72 5.72 0 0 1 2.9.7 4.94 4.94 0 0 1 2 2.2l-2.5 1.2a2.65 2.65 0 0 0-.96-1.26 2.37 2.37 0 0 0-1.3-.33 2.67 2.67 0 0 0-1.1.25 2.43 2.43 0 0 0-.8.66 3.16 3.16 0 0 0-.53 1 4.18 4.18 0 0 0-.2 1.35 4.25 4.25 0 0 0 .2 1.3 2.82 2.82 0 0 0 .52 1 2.36 2.36 0 0 0 .84.68 2.93 2.93 0 0 0 1.2.2 3.35 3.35 0 0 0 .8-.1 2.08 2.08 0 0 0 .7-.26 1.68 1.68 0 0 0 .5-.5 2.1 2.1 0 0 0 .3-.8h-2.3zm9.3.65a5.44 5.44 0 0 1 3.48-5.14 6.7 6.7 0 0 1 4.7 0 5.55 5.55 0 0 1 1.86 1.18 5.42 5.42 0 0 1 1.2 1.77 5.75 5.75 0 0 1 0 4.38 5.4 5.4 0 0 1-1.2 1.8 5.55 5.55 0 0 1-1.85 1.2 6.7 6.7 0 0 1-4.8 0 5.46 5.46 0 0 1-3.4-5.2zm2.87 0a2.8 2.8 0 0 0 .24 1.16 2.9 2.9 0 0 0 1.6 1.53 3.1 3.1 0 0 0 2.3 0 3 3 0 0 0 1-.6 2.87 2.87 0 0 0 .7-.9 3 3 0 0 0 0-2.3 2.9 2.9 0 0 0-.6-.9 3 3 0 0 0-1-.6 3.1 3.1 0 0 0-2.3 0 2.9 2.9 0 0 0-1.6 1.5 2.82 2.82 0 0 0-.2 1.2zm24.57-2.95V32H63.7v-8.23h-2.25v-2.32h7.25v2.32zM72 26.72a5.44 5.44 0 0 1 3.48-5.14 6.7 6.7 0 0 1 4.7 0 5.55 5.55 0 0 1 1.86 1.18 5.42 5.42 0 0 1 1.2 1.77 5.75 5.75 0 0 1 0 4.38 5.4 5.4 0 0 1-1.2 1.8 5.55 5.55 0 0 1-1.85 1.2 6.7 6.7 0 0 1-4.8 0 5.46 5.46 0 0 1-3.4-5.2zm2.87 0a2.8 2.8 0 0 0 .24 1.16 2.9 2.9 0 0 0 1.6 1.53 3.1 3.1 0 0 0 2.3 0 3 3 0 0 0 1-.6 2.87 2.87 0 0 0 .7-.9 3 3 0 0 0 0-2.3 2.9 2.9 0 0 0-.6-.9 3 3 0 0 0-1-.6 3.1 3.1 0 0 0-2.3 0 2.9 2.9 0 0 0-1.6 1.5 2.82 2.82 0 0 0-.2 1.2zm22.27-5.28l1.82 6.82 2.24-6.82h2.18l2.24 6.82 1.82-6.82h2.87L107.2 32h-2.8l-2.07-6.12-2.1 6.12h-2.8L94.3 21.44zM120 23.77h-3.26v1.76h3.08v2.32h-3.08v1.82H120V32h-6V21.43h6zm4.63-2.33h4.1a3.15 3.15 0 0 1 2.2.7 2.6 2.6 0 0 1 .76 2 2.74 2.74 0 0 1-.3 1.32 2.4 2.4 0 0 1-.9.9 3.32 3.32 0 0 1 1 .33 2.17 2.17 0 0 1 .6.5 2.1 2.1 0 0 1 .3.7 3.47 3.47 0 0 1 .1.9 3.17 3.17 0 0 1-.3 1.3 2.67 2.67 0 0 1-.74 1 3.1 3.1 0 0 1-1.16.6 5.4 5.4 0 0 1-1.5.2h-4.42zm2.74 4.14h.5q1.3 0 1.3-1t-1.3-1h-.5zm0 4.28h.6a3.07 3.07 0 0 0 1.48-.27 1 1 0 0 0 0-1.8 3.06 3.06 0 0 0-1.48-.3h-.6zm15.37-5.7a3.36 3.36 0 0 0-.9-.55 2.37 2.37 0 0 0-.87-.1 1.4 1.4 0 0 0-.87.3.8.8 0 0 0-.34.7.65.65 0 0 0 .17.5 1.45 1.45 0 0 0 .44.36 3.67 3.67 0 0 0 .62.2l.6.2a4.24 4.24 0 0 1 2 1.2 3 3 0 0 1 .6 2 3.8 3.8 0 0 1-.3 1.5 3.05 3.05 0 0 1-.8 1.1 3.67 3.67 0 0 1-1.3.75 5.36 5.36 0 0 1-1.8.24 6.36 6.36 0 0 1-3.7-1.2l1.13-2.2a4.78 4.78 0 0 0 1.22.8 2.92 2.92 0 0 0 1.16.27 1.42 1.42 0 0 0 1-.3.94.94 0 0 0 .36-.7 1 1 0 0 0-.08-.4.9.9 0 0 0-.3-.3 2.26 2.26 0 0 0-.5-.3l-.76-.27q-.55-.18-1-.38a3.25 3.25 0 0 1-.9-.53 2.5 2.5 0 0 1-.67-.83 3 3 0 0 1-.23-1.3 3.74 3.74 0 0 1 .24-1.4 3.15 3.15 0 0 1 .76-1.1 3.24 3.24 0 0 1 1.15-.7 4.34 4.34 0 0 1 1.53-.24 6.65 6.65 0 0 1 1.64.2 7.2 7.2 0 0 1 1.62.6zm8.6 1.36h4v-4.07h2.75V32h-2.8v-4.34h-4V32h-2.8V21.45h2.7zm11.06 1.2a5.44 5.44 0 0 1 3.5-5.14 6.7 6.7 0 0 1 4.7 0 5.55 5.55 0 0 1 1.85 1.18 5.42 5.42 0 0 1 1.2 1.77 5.75 5.75 0 0 1 0 4.38 5.4 5.4 0 0 1-1.2 1.8 5.55 5.55 0 0 1-1.85 1.2 6.7 6.7 0 0 1-4.7 0 5.46 5.46 0 0 1-3.5-5.1zm2.88 0a2.8 2.8 0 0 0 .24 1.16 2.9 2.9 0 0 0 1.6 1.53 3.1 3.1 0 0 0 2.27 0 3 3 0 0 0 1-.6 2.87 2.87 0 0 0 .6-.9 3 3 0 0 0 0-2.3 2.9 2.9 0 0 0-.7-.9 3 3 0 0 0-1-.6 3.1 3.1 0 0 0-2.3 0 2.9 2.9 0 0 0-1.6 1.5 2.82 2.82 0 0 0-.3 1.2zM181.2 32h-2.75V21.44h4.37a3.73 3.73 0 0 1 2.72.92 4.06 4.06 0 0 1 0 5.2 3.73 3.73 0 0 1-2.72.93h-1.62zm0-5.7h.9q1.5 0 1.5-1.33t-1.5-1.32h-.9z" id="txt"/>
+  <div class="bottommobile1">
+    <div class="buttonwrap">
+      <a href="http://digedidaily.se/2017/svgknapp.html#" class="knapp">
+        <svg id="knapp" class="knappsvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244 60"><path id="skugga" class="skugga" d="M234 10h8v48H10v-7.9"></path>
+          <path id="rektangel" class="rektangel" d="M2 2h232v48H2z"></path>
+          <path id="rektangelhover" class="rektangelhover" d="M2 2h232v48H2z"></path>
+          <path id="pil" class="pil" d="M198.5 26.9h8.2v-2l2 2-2 2v-2">
+          </path>
+          <text class="txt">Go to whatever</text>
         </svg>
+      </a>
 
-<!-- onclick="document.getElementById('fullpage').scrollIntoView({behavior: 'smooth'});" -->
-        <svg class="learnmorebtn"  width="240px" height="56px" viewBox="0 0 240 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-            <desc>Created with Sketch.</desc>
-            <defs>
-                <rect id="path-1" x="0" y="0" width="232" height="48"></rect>
-            </defs>
-            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="Knapp">
-                    <g class="Group">
-
-                        <rect class="learnmore_background" stroke="#071D2B" stroke-width="4" x="10" y="10" width="228" height="44"></rect>
-                            <rect class="learnmore_foreground" stroke="#071D2B" stroke-width="4" x="2" y="2" width="228" height="44" fill="#EEEEEE">
-                              <path id="pil" class="pil" d="M198.5 26.9h8.2v-2l2 2-2 2v-2"/>
-                              </rect>
-
-                              <text class="texthelpme_2" font-family="Futura-Bold, Futura" font-size="14" font-weight="bold" line-spacing="48" letter-spacing="2.625" fill="#071D2B">
-
-                                  <tspan class="fixalign1" x="20%" y="30">LEARN MORE</tspan>
-                                  <tspan class ="learnmore_arrow"x="194.9315" y="30" font-family="LucidaGrande-Bold, Lucida Grande">↓</tspan>
-                              </text>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </svg>
+      <a href="" class="knapp">Learn more</a>
 
       </div>
     </div>
-
     </div>
+  </div>
+</div>
+</div>
+</div>
 
-   <!-- Section two starts below -->
+   <!-- Section two starts here -->
 
-   <div class="section_2" id="id_section_2">
-      <div id="fullpage">
-        <div class="section">
-          <div class="slide">
-            <div class="slide1wrap">
-              <h1 class="hello">HELLO</h1>
+  <div class="section_2" id="id_section_2">
+        <div class="second_framelogobox_top">
+          <div class="second_framelogobox_right">
+            <div class="second_framelogobox_bottom">
+              <div class="second_framelogobox_left">
+              </div>
             </div>
           </div>
-
-        <div class="slide">
-          <h1 class="slide2wrap">HELLO AGAIN</h1>
         </div>
-    </div>
-    </div>
+
+      <div class="section_2_text_wrap">
+        <p class="section_2_text">Integer eu augue dapibus, molestie est congue, lobortis magna. Sed tincidunt neque non egestas tempus. Suspendisse potenti. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque euismod porta elementum. Aliquam imperdiet tellus nisl, non ultrices lorem eleifend ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, Integer eu augue dapibus, molestie est congue, lobortis magna. Sed tincidunt neque non egestas tempus. Suspendisse potenti. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque euismod porta elementum. Aliquam imperdiet tellus nisl, non ultrices lorem eleifend ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra,</p>
+      </div>
   </div>
+  <!-- Section three starts here -->
 
   <div class="section_3">
-    section 3
+    <h1 class="section_3_text">FUCK FAST FASHION!</h1>
+    <a href="" class="knapp">Till webbutiken</a>
+    <div class="section_3_background"></div>
   </div>
 
-    <!-- Section 4 follows -->
+    <!-- Section 4 starts here -->
 
   <div class="section_4">
-    <div class="lookbook">
-      <div class="lookbook_top">
-      </div>
-
-      <div class="lookbook_middle">
-      </div>
-
-      <div class="lookbook_bottom">
+    <div class="framelogobox_top">
+      <div class="second_framelogobox_right">
+        <div class="second_framelogobox_bottom">
+          <div class="second_framelogobox_left">
+          </div>
+        </div>
       </div>
     </div>
 
+    <!-- This will be the lookbook -->
+
+    <div class="lookbook_wrap">
+      <div class="lookbook_one"></div>
+      <div class="lookbook_two"></div>
+      <div class="lookbook_three"></div>
+      <div class="lookbook_four"></div>
+      <div class="lookbook_five"></div>
+      <div class="lookbook_six"></div>
+    </div>
   </div>
+
+  <!-- Section 5 starts here. This will be the first slide. Still under development -->
+
+ <div class="section_5" id="scrollThis">
+    <div class="navigation" id="">Navigation</div>
+  <div class="navigationwrap" id="nav1">
+   <div class="test1 scrollsnap"><h1 class="test1knapp">HEJ</h1></div>
+   <div class="test2 scrollsnap"><h1 class="test2knapp">HEJ 2</h1></div>
+   <div class="test3 scrollsnap"><h1 class="test3knapp">HEJ 3</h1></div>
+ </div>
+ </div>
+
+
 
 </div>
 
-<script>
 
-$(function() {
-    $(".webshop_foreground, .texthelpme").click(function() {
-      $(".webshop_foreground").toggleClass("webshop_foreground_click");
-      $(".texthelpme").toggleClass("texthelpme_click");
-
-});
-
-
-  $(".learnmore_foreground, .texthelpme_2").mousedown(function() {
-      $(".learnmore_foreground").toggleClass("learnmore_foreground_click");
-      $(".texthelpme_2").toggleClass("texthelpme_2_click");
-
-  });
-
-  $(".learnmore_foreground, .texthelpme_2").mouseup(function() {
-      $(".learnmore_foreground").toggleClass("learnmore_foreground_click");
-      $(".texthelpme_2").toggleClass("texthelpme_2_click");
-
-  });
-});
-
-
-
-
-</script>
 
 <script src="script.js" charset="utf-8"></script>
 
