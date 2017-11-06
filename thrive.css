@@ -6,7 +6,7 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-  max-width: 375px;
+
 }
 @font-face {
   font-family: 'Parabola';
@@ -17,24 +17,68 @@ body {
   font-family: 'FuturaLight';
   src: url('../momentiris/thrive/Fonts/futura_light.ttf');
 }
+@font-face {
+  font-family: 'FuturaMedium';
+  src: url('../momentiris/thrive/Fonts/Futura_Medium.otf');
+}
 
 h1 {
   margin: 0;
+  font-family: 'Parabola';
 }
 h2 {
   margin: 0;
 }
 
-.section_1 {
+ /*Section one css. the ".framelogobox_top" also applies to other frame logos*/
 
-  background-color: #0d1814;
+.framelogobox_top {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-image: url(./framelogo.png);
+  background-repeat: no-repeat;
+  background-size: 140px 16px;
+  background-position: 50% 2%;
+
+}
+
+.framelogobox_right {
+  background-image: url(./framelogo_90.png);
+  background-repeat: no-repeat;
+  background-size: 16px 140px;
+  height: 100vh;
+  width: 100vw;
+  background-position: 98% 50%;
+  position:absolute;
+  top:0;
+
+}
+/*.framelogobox_bottom {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  background-image: url(./framelogo.png);
+  background-repeat: no-repeat;
+  background-size: 140px 16px;
+}*/
+.framelogobox_left {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-image: url(./framelogo_-90.png);
+  background-repeat: no-repeat;
+  background-size: 16px 140px;
+  background-position: 2% 50%;
+}
+
+
+.section_1 {
+  background-color: #1C0E0E;
   background-image: url(heroimagefull.png);
   background-blend-mode: luminosity;
   background-repeat: no-repeat;
-  /*background-position:0px 0px;*/
-
-  background-position: 1% 1%;
-   background-size: cover;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -45,55 +89,26 @@ h2 {
   transition: .2s ease;
 }
 
-.topmobile1 {
-  width: 100vw;
-  height: 20vh;
-
-}
-
-.header1 {
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  font-family: 'FuturaLight';
-}
-
-
-.thriveheader {
-  margin-top: 45px;
-  font-weight: lighter;
-  letter-spacing: 2px;
-  color: white;
-}
-
-.conscious {
-  margin:0;
-  font-family: 'FuturaLight';
-  font-size: 10px;
-  color: white;
-}
-
 .middlemobile1 {
-  height: 40vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-
+  margin: 0;
+  height: 60vh;
+  width: 90vw;
+  padding-top: 96px;
+  padding-left: 54px;
   transition: 1s ease-out:
 }
 
 .ingress {
   font-family: Parabola;
   text-align: left;
-  font-size: 36px;
-  line-height: 1.3;
-  margin-left: 34px;
+  font-weight: lighter;
+  font-size: 42px;
+  line-height: 1.1;
   color: white;
+  float: left;
 }
 
-#ska, #vi, #animera {
+.green {
   color: #76C8A8;
 }
 
@@ -104,96 +119,254 @@ h2 {
   align-items: flex-end;
   justify-content: center;
   position: relative;
-
 }
 
-.triangle {
-  align-self: center;
-}
 .buttonwrap {
-  height: 20vh;
+  height: 130px;
   display:flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 43px;
-
-
+  margin-bottom: 47px;
 }
+
 
 /*Section 2 follows*/
 
 .section_2 {
   height: 100vh;
   width: 100vw;
-  background-color: #76C8A8;
+  background-color: white;
 }
 
-.slide1wrap {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.second_framelogobox_top {
+  position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 140px 16px;
+    background-image: url(framelogo_black.png);
+    background-position: 50% 3%;
+    opacity: 0.5
 }
-.slide2wrap {
-  margin: 0;
+
+.second_framelogobox_right {
+  position: absolute;
+  background-image: url(framelogo_black_90.png);
+  background-position: 97% 50%;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 16px 140px;
+
+}
+.second_framelogobox_bottom {
+  position: absolute;
+  background-image: url(framelogo_black.png);
+  background-position: 50% 97%;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 140px 16px;
+
+}
+.second_framelogobox_left {
+  position: absolute;
+  background-image: url(framelogo_black_-90.png);
+  background-position: 3% 50%;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 16px 140px;
+}
+
+.section_2_text_wrap {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+.section_2_text {
+  color: #76C8A8;
+  font-family: 'Futura';
+  font-size: 16px;
+  line-height: 1.5;
+  padding-top: 77px;
+  padding-left: 56px;
+  padding-right: 56px;
+  margin: 0;
+  height: 80vh;
 }
 
 /*section 3 follows*/
 
 .section_3 {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section_3_background {
+  background-color: rgba(0,0,0,);
+  opacity: 0.5;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(section_3_image.png);
+  background-position: 40% 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(4px);
+  overflow-y: hidden;
+  position: absolute;
+  z-index: 0;
+}
+
+.section_3_text {
+  margin-bottom: 40px;
+  color: white;
+  z-index: 1;
+  font-size: 79px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+/*Section 4 - lookbook follows*/
+
+.section_4 {
+  background-color: #1C0E0E;
+  overflow: scroll;
+}
+.section_4, .lookbook_wrap {
+  width: 100vw;
+  height: 100vh;
+}
+
+.lookbook_wrap {
+position: relative;
+
+}
+
+.lookbook_one {
+  background-color:#1C0E0E ;
+  min-width: 136px;
+  min-height: 204px;
+  width: 20vw;
+  height: 30vw;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background-image: url(section_4_one.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: all .5s ease;
+  cursor: pointer;
+  background-blend-mode: luminosity;
+
+
+}
+.lookbook_one_clicked {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(section_4_one.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+top: 0%;
+left: 0%;
+background-blend-mode: normal;
+
+}
+.lookbook_two {}
+.lookbook_three {}
+.lookbook_four {}
+.lookbook_five {}
+.lookbook_six {}
+
+ /*Section 5 and first slideshow follows*/
+
+.section_5 {
   width: 100vw;
   height: 100vh;
   background-color: grey;
-}
-
-/*Section 4 follows*/
-
-.section_4 {
-  width: 100vw;
-  height: 100vh;
-
-}
-
-.lookbook {
-  width: 100vw;
-  height: 100vh;
-
+  display: flex;
+  flex-flow: row nowrap;
   position: relative;
-  padding-top: 20px;
-
 }
 
-.lookbook_top {
-  width: 189px;
-  height: 284px;
-  background-image: url(section_4_upper_right.png);
-  margin-left: 45%;
+  .test1 {
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    min-width: 100vw;
+    transition: all 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-  margin-bottom: 10px;
-}
+  .scrollsnap {
+    scroll-snap-coordinate: 0% 100%;
+  }
 
-.lookbook_middle {
-  width: 291px;
-  height: 201px;
-  background-image: url(./section_4_middle.png);
+  .test2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: green;
+    min-width: 100vw;
+    transition: all 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-}
+  .test2_clicked {
+    margin-left: 100vw;
+  }
 
-.lookbook_bottom {
-  width: 258px;
-  height: 172px;
-  background-image: url(./section_4_bottom.png);
-  background-repeat: no-repeat;
-  background-position: 20px 60px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  .test3 {
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    min-width: 100vw;
+    transition: all 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-}
+  .test3_clicked {
+
+  }
+
+  .navigation {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    height: 67px;
+    background-color: blue;
+    overflow: scroll;
+  }
+
+  .navigationwrap {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    flex-flow: row nowrap;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-x: repeat(100%);
+    scroll-behavior: smooth;
+
+  }
+
+  /*Section 6 will be under this */
