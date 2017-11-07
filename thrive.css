@@ -23,6 +23,11 @@ body {
    src: url('Fonts/futura_bold.ttf');
 }
 
+@font-face {
+   font-family: 'futura_medium';
+   src: url('Fonts/futura_medium.ttf');
+}
+
 h1 {
   margin: 0;
   font-family: 'Parabola';
@@ -304,27 +309,84 @@ background-blend-mode: normal;
   .test1 {
     width: 100vw;
     height: 100vh;
-    background-color: red;
+    background-color: #76C8A8;
     min-width: 100vw;
     transition: all 1s ease;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+  }
+  .test1 > h2 {
+    display: flex;
+    justify-content: center;
+    width: 40vh;
+    margin: 2vh;
+    padding: 2vh;
+    font-size: 4vh;
+    font-family: 'futura_bold';
+    color: white;
+  }
+  .test1 > p {
+    display: flex;
+    justify-content: center;
+    width: 50vh;
+    margin: 2vh;
+    font-size: 2vh;
+    padding: 2vh;
+    font-family: 'futura_medium';
+    color: white;
   }
 
   .scrollsnap {
     scroll-snap-coordinate: 0% 100%;
   }
 
+/*border just to see center of view*/
   .test2 {
+    border-style: solid;
+    border-color: black;
     width: 100vw;
     height: 100vh;
-    background-color: green;
+    background-color: #76C8A8;
     min-width: 100vw;
     transition: all 1s ease;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+  }
+
+  /*headline odling*/
+  .test2 > h1 {
+    height: 20vh;
+    width: auto;
+    margin: 2vh;
+    padding: 1vh;
+    font-size: 6vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'parabola';
+    color: white;
+  }
+
+  /*white t-shirt illustration*/
+  .test2 > img {
+    display: flex;
+    height: 40vh;
+    margin: 2vh;
+  }
+
+  /*text below t-shirt*/
+  .test2 > p {
+    height: 40vh;
+    font-size: 2vh;
+    margin: 2vh;
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'futura_medium';
+    color: white;
   }
 
   .test2_clicked {
@@ -334,7 +396,7 @@ background-blend-mode: normal;
   .test3 {
     width: 100vw;
     height: 100vh;
-    background-color: blue;
+    background-color: #76C8A8;
     min-width: 100vw;
     transition: all 1s ease;
     display: flex;
