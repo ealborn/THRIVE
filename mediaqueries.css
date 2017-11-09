@@ -1,21 +1,199 @@
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .section_1 {
     background-color: #1C0E0E;
     background-image: url(heroimagefull.png);
     background-blend-mode: luminosity;
     background-repeat: no-repeat;
     background-position: center;
-
-
-     background-size: cover;
+    background-size: cover;
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin: 0;
-    background-attachment: fixed;
-
   }
 
 }
+
+@media screen and (min-width: 768px) {
+.lookbook_clicked {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  background-position: center;
+  background-size: contain;
+
+}
+
+.lookbook {
+  background-size: contain;
+}
+
+.buttonwrap {
+  transition: all 1s ease;
+  flex-direction: row;
+
+}
+
+.middlemobile1 {
+  margin: 0;
+  height: 60vh;
+  width: 100vw;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vw;
+}
+.mobile {
+  display: none;
+}
+
+.ingress {
+  font-family: Parabola;
+  width: 70vw;
+  height: 50%;
+  text-align: left;
+  font-weight: lighter;
+  font-size: 4em;
+  line-height: 1.1;
+  transition: all .5s ease;
+
+}
+
+
+}
+@media screen and (min-width: 1000px) {
+
+.ingress {
+  font-family: Parabola;
+  width: 80vw;
+  min-width: 1000px;;
+  height: 60vh;
+  text-align: left;
+  font-weight: lighter;
+  font-size: 6.5em;
+  line-height: 1;
+
+}
+
+.section_2 {
+  height: 50vh;
+  width: 100vw;
+  background-color: white;
+}
+
+
+.section_2_text_wrap {
+  height: 50vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.section_2_text_webb {
+  width: 50vw;
+
+  min-width: 30vw;
+  color: #76C8A8;
+  font-family: 'Futura';
+  font-weight: lighter;
+  letter-spacing: normal;
+  font-size: 24px;
+  line-height: 1.2;
+  padding: 0;
+
+  margin: 0;
+  height: auto;
+}
+
+.section_3 {
+  background-color: #1C0E0E;
+  height: 50vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+@keyframes backgroundchange {
+  from { opacity: 0;}
+    to{ opacity: 1; }
+  }
+.section_3_background {
+  background-image: url(./lookbookimages/lookbook_4_luminosity.png);
+  width: 100vw;
+  height: 50vh;
+
+  background-position: 60% 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(0);
+  overflow-y: hidden;
+  z-index: 1;
+  background-color: #1C0E0E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  animation-name: backgroundchange;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+
+
+.mobilknapp {
+  visibility: hidden;
+}
+.webbknapp {
+  visibility: visible;
+}
+.section_3_textwrap {
+  width: 100vw;
+  height: 50vh;
+  background-color: none;
+
+}
+
+.section_3_text_mobile {
+  display: none;
+}
+
+.textlinewrap {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8%;
+}
+
+.section_3_text_webb {
+  display: inline;
+  margin-bottom: 20px;
+  color: white;
+  z-index: 1;
+  font-size: 79px;
+  font-weight: lighter;
+  text-align: center;
+  background-color: none;
+  }
+
+  .tinyline {
+    width: 100px;
+    height: 2px;
+    background-image: url(./tinyline.svg);
+    background-repeat: none;
+    z-index: 10;
+    background-color: #76C8A8;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }

@@ -1,5 +1,5 @@
 
-//Loop for generating our button design with a new "a href" element with a classname of "knapp"
+// Loop for generating our button design with a new "a href" element with a classname of "knapp"
 
   var x = document.getElementsByClassName("knapp");
   var i;
@@ -8,13 +8,33 @@
 
     ;}
 
+
       // below will be script for lookbook. Still under development
 
-    $(function() {
-        $(".lookbook_one, .lookbook2").click(function() {
-          $(".lookbook_one").toggleClass("lookbook_one_clicked");
+
+      $(function() {
+
+
+
+      $(".lookbook").click(function(e) {
+        let current = $(this);
+
+
+          $(this).toggleClass("lookbook_clicked");
+
+
+      $(this).siblings().toggleClass("lookbook_opacity");
+
+
       });
+
+
     });
+
+
+
+
+
 
 
       //The following is under development script for the slideshow
@@ -42,4 +62,6 @@
       });
       });
 
-    });
+});
+
+// horizontal scroll for infographics_wrap

@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+p{
+  font-family: 'Futura'
+}
 
 body {
   margin: 0;
@@ -28,6 +31,7 @@ h1 {
 }
 h2 {
   margin: 0;
+  margin-right: 0;
 }
 
  /*Section one css. the ".framelogobox_top" also applies to other frame logos*/
@@ -40,6 +44,7 @@ h2 {
   background-repeat: no-repeat;
   background-size: 140px 16px;
   background-position: 50% 2%;
+  z-index: 1;
 
 }
 
@@ -51,17 +56,20 @@ h2 {
   width: 100vw;
   background-position: 98% 50%;
   position:absolute;
-  top:0;
+  z-index: 5;
 
 }
-/*.framelogobox_bottom {
+.framelogobox_bottom {
   width: 100vw;
   height: 100vh;
-  background-color: black;
+
   background-image: url(./framelogo.png);
   background-repeat: no-repeat;
   background-size: 140px 16px;
-}*/
+  position: absolute;
+  background-position: 50% 98%;
+  z-index: 0;
+}
 .framelogobox_left {
   width: 100vw;
   height: 100vh;
@@ -86,30 +94,35 @@ h2 {
   align-content: center;
   margin: 0;
   background-attachment: fixed;
-  transition: .2s ease;
+  transition: all .4s ease;
 }
 
 .middlemobile1 {
-  margin: 0;
+  margin-left: 0;
   height: 60vh;
   width: 90vw;
-  padding-top: 96px;
-  padding-left: 54px;
-  transition: 1s ease-out:
+  padding-top: 15vh;
+  padding-left: 15vw;
+
 }
 
 .ingress {
   font-family: Parabola;
   text-align: left;
   font-weight: lighter;
-  font-size: 42px;
+  font-size: 2.6em;
   line-height: 1.1;
   color: white;
-  float: left;
+  width: 100%;
+  transition: all .3s ease;
+
+
+
 }
 
 .green {
   color: #76C8A8;
+
 }
 
 .bottommobile1 {
@@ -119,15 +132,18 @@ h2 {
   align-items: flex-end;
   justify-content: center;
   position: relative;
+  transition: all .2s ease;
 }
 
 .buttonwrap {
+  transition: all 1s ease;
   height: 130px;
   display:flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
   margin-bottom: 47px;
+
 }
 
 
@@ -140,14 +156,15 @@ h2 {
 }
 
 .second_framelogobox_top {
-  position: absolute;
+    position: absolute;
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: 140px 16px;
     background-image: url(framelogo_black.png);
     background-position: 50% 3%;
-    opacity: 0.5
+    opacity: 0.5;
+
 }
 
 .second_framelogobox_right {
@@ -186,7 +203,7 @@ h2 {
   background-color: white;
 }
 
-.section_2_text {
+.section_2_text_webb {
   color: #76C8A8;
   font-family: 'Futura';
   font-size: 16px;
@@ -210,10 +227,11 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: all .1s ease;
 }
 
 .section_3_background {
-  background-color: rgba(0,0,0,);
+
   opacity: 0.5;
   width: 100vw;
   height: 100vh;
@@ -225,9 +243,21 @@ h2 {
   overflow-y: hidden;
   position: absolute;
   z-index: 0;
+  transition: all .1s ease;
+
 }
 
-.section_3_text {
+.mobilknapp {
+  visibility: visible;
+}
+.webbknapp {
+  visibility: hidden;
+}
+.section_3_text_webb {
+  display: none;
+}
+
+.section_3_text_mobile {
   margin-bottom: 40px;
   color: white;
   z-index: 1;
@@ -238,56 +268,161 @@ h2 {
 
 /*Section 4 - lookbook follows*/
 
-.section_4 {
-  background-color: #1C0E0E;
-  overflow: scroll;
-}
+
 .section_4, .lookbook_wrap {
   width: 100vw;
   height: 100vh;
+    background-color: #1C0E0E;
+
 }
 
 .lookbook_wrap {
-position: relative;
+  position: relative;
+  background-color: #1C0E0E;
+  display: flex;
+
+
 
 }
 
 .lookbook_one {
-  background-color:#1C0E0E ;
-  min-width: 136px;
-  min-height: 204px;
-  width: 20vw;
-  height: 30vw;
-  position: absolute;
-  top: 5%;
-  left: 5%;
+  width: 136px;
+  height: 204px;
+  top: 0;
+  left: 50%;
+  background-size: contain;
   background-image: url(section_4_one.png);
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center;
-  transition: all .5s ease;
+  transition: all .5s ease-out;
   cursor: pointer;
   background-blend-mode: luminosity;
 
 
-}
-.lookbook_one_clicked {
-  width: 100vw;
-  height: 100vh;
-  background-image: url(section_4_one.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-top: 0%;
-left: 0%;
-background-blend-mode: normal;
 
 }
-.lookbook_two {}
-.lookbook_three {}
-.lookbook_four {}
-.lookbook_five {}
-.lookbook_six {}
+
+
+.lookbook_two {
+  width: 115px;
+  height: 143px;
+  background-image: url(./lookbookimages/lookbook_2.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 10%;
+  top: 15%;
+  transition: all .5s ease;
+  overflow: scroll;
+
+  background-blend-mode: luminosity;
+}
+
+.lookbook_three {
+  width: 124px;
+  height: 186px;
+  background-image: url(./lookbookimages/lookbook_3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  top:35%;
+  left: 60%;
+  transition: all .5s ease;
+
+  background-blend-mode: luminosity;
+}
+
+
+.lookbook_four {
+  width: 218px;
+  height: 146px;
+  background-image: url(./lookbookimages/lookbook_4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  top: 39%;
+  left: 0%;
+  transition: .5s ease;
+  background-position: center;
+  background-blend-mode: luminosity;
+
+}
+
+
+
+.lookbook_five {
+  width: 176px;
+  height: 117px;
+  background-image: url(./lookbookimages/lookbook_5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  top: 70%;
+  left: 50%;
+  transition: all .5s ease;
+
+  background-blend-mode: luminosity;
+}
+
+
+.lookbook_six {
+
+  width: 143px;
+  height: 216px;
+  background-image: url(./lookbookimages/lookbook_6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  top: 65%;
+  left: 7%;
+  transition: all .5s ease;
+
+  background-blend-mode: luminosity;
+}
+
+.lookbook_clicked {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+
+  animation-name: lookbook;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-direction: forwards, backwards;
+  opacity: 1;
+
+
+
+}
+.lookbook {
+position: absolute;
+background-color:#1C0E0E;
+z-index: 5;
+opacity: 0.5;
+transition: all 1s ease;
+background-position: center;
+}
+
+@keyframes fadeout {
+  0%, 60% {}
+    100% {opacity: 0;}
+}
+
+.lookbook_opacity{
+
+  animation-name: fadeout;
+  animation-delay: .5s;
+  animation-duration: .5s;
+  animation-fill-mode: both;
+}
+
+
+
 
  /*Section 5 and first slideshow follows*/
 
@@ -311,9 +446,7 @@ background-blend-mode: normal;
     align-items: center;
   }
 
-  .scrollsnap {
-    scroll-snap-coordinate: 0% 100%;
-  }
+
 
   .test2 {
     width: 100vw;
@@ -363,10 +496,84 @@ background-blend-mode: normal;
     flex-flow: row nowrap;
     display: flex;
     overflow: scroll;
-    scroll-snap-type: mandatory;
-    scroll-snap-points-x: repeat(100%);
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
 
   }
 
   /*Section 6 will be under this */
+
+  .section_6 {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: row nowrap;
+    overflow: scroll;
+  }
+
+
+
+  .infographics_wrap{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    z-index: -1;
+
+  }
+  .infographics_wrap_inner {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+
+
+  }
+
+
+  .info_slide {
+    height: 100vh;
+    width: 100vw;
+    min-width: 100vw;
+
+  }
+
+  .slide_one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./Infographics_bilder/infographics_bg_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% 50%;
+  }
+
+  .infographics_svg_1 {
+    width: 50vw;
+    max-width: 395px;
+    max-height: 395px;
+  }
+
+  .infographics_1_ingress {
+    font-size: 5em;
+    font-weight: 100;
+    margin-top: 0.5em;
+    color: #76C8A8;
+  }
+
+  .infographics_1_text {
+    width: 80vw;
+    max-width: 300px;
+    text-align: center;
+    color: white;
+
+  }
+
+  .slide_two {
+    background-image: url(./Infographics_bilder/infographics_bg_2.png)
+  }
+
+  .slide_three {
+    background-image: url(./Infographics_bilder/infographics_bg_3.png)
+  }
