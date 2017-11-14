@@ -55,7 +55,7 @@ svg#knapp {
   transition: transform 0.3s ease, stroke-dashoffset 0.5s ease, stroke 0.2s ease 0.3s;
 }
 .txt {
-  font-family: 'Futura';
+  font-family: 'futura_medium';
   font-weight: 700;
   text-transform: uppercase;
   text-anchor: middle;
