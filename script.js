@@ -12,24 +12,16 @@
       // below will be script for lookbook. Still under development
 
 
-      $(function() {
-
-
-
-      $(".lookbook").click(function(e) {
-        let current = $(this);
-
-
-          $(this).toggleClass("lookbook_clicked");
-
-
+  $(function() {
+    $(".lookbook").click(function(e) {
+      let current = $(this);
+      let hideButton = document.querySelector("#lookbookbtn");
+      $(this).toggleClass("lookbook_clicked");
       $(this).siblings().toggleClass("lookbook_opacity");
-
-
-      });
-
-
+      $('#lookbookbtn').fadeToggle('slow');
     });
+
+  });
 
 
 
@@ -64,4 +56,39 @@
 
 });
 
-// horizontal scroll for infographics_wrap
+ // Parallax
+
+ window.requestAnimationFrame = window.requestAnimationFrame
+ || window.mozRequestAnimationFrame
+ || window.webkitRequestAnimationFrame
+ || window.msRequestAnimationFrame
+ || function(f){setTimeout(f, 1000/60)}
+
+
+
+
+ function parallaxOne() {
+   let lookBook = document.getElementsByClassName("lookbook");
+   let lookBookOne = document.getElementsByClassName("lookbook_one");
+   let scrollTop = window.pageYOffset;
+   let sectionFourOffset = document.querySelector('.section_4').getBoundingClientRect().top;
+
+    if (sectionFourOffset <= 300) {
+      for (lookBook of lookBook) {
+        let currentTop = window.getComputedStyle(lookBook).getPropertyValue('top');
+        console.log(currentTop);
+        //  lookBook.style.top = currentTop + scrollTop + '%';
+        let test = document.getElementsByClassName('lookbook');
+        for (var i = 0; i < test.length; i++) {
+          test[i].style.top = test[i].getPropertyValue('top') + scrollTop + 'px';
+        }
+
+      }
+    }
+
+ }
+
+ window.addEventListener('scroll', function(){
+   requestAnimationFrame(parallaxOne)
+ }, false);
+console.log(scrollTop);

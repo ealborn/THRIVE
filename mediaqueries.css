@@ -13,6 +13,7 @@
     align-content: center;
   }
 
+
 }
 
 @media screen and (min-width: 768px) {
@@ -22,6 +23,13 @@
   top: 0;
   background-position: center;
   background-size: contain;
+
+}
+.logodash {
+  width: 4rem;
+  height: 0.1rem;
+  margin-top: 1rem;
+  background-color: #76C883;
 
 }
 
@@ -84,6 +92,10 @@
   background-color: white;
 }
 
+.section_2_ingress_wrap {
+  display: none;
+}
+
 
 .section_2_text_wrap {
   height: 50vh;
@@ -97,7 +109,6 @@
 
 .section_2_text_webb {
   width: 50vw;
-
   min-width: 30vw;
   color: #76C8A8;
   font-family: 'Futura';
@@ -106,7 +117,6 @@
   font-size: 24px;
   line-height: 1.2;
   padding: 0;
-
   margin: 0;
   height: auto;
 }
@@ -131,7 +141,6 @@
   background-image: url(./lookbookimages/lookbook_4_luminosity.png);
   width: 100vw;
   height: 50vh;
-
   background-position: 60% 70%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -197,3 +206,108 @@
     margin-right: 10px;
     margin-bottom: 20px;
   }
+
+  /*Lookbook*/
+
+  .lookbook_wrap {
+    position: relative;
+    background-color: #1C0E0E;
+    display: flex;
+  }
+
+  .lookbook_one {
+    width: 29vw;
+    height: 70vh;
+    top: 10%;
+    left: 68%;
+    background-size: contain;
+    background-image: url(section_4_one.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-blend-mode: luminosity;
+  }
+
+
+
+
+  .lookbook_two {
+    display: none;
+
+  }
+
+  .lookbook_three {
+    width: 25vw;
+    height: 50vh;
+    background-image: url(./lookbookimages/lookbook_3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top:40%;
+    left: 4%;
+    transition: all .5s ease;
+    background-blend-mode: luminosity;
+  }
+  .lookbook_four {
+    width: 30vw;
+    height: 30vh;
+    background-image: url(./lookbookimages/lookbook_4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    top: 5%;
+    left: 25%;
+    transition: .1s ease;
+    background-position: center;
+    background-blend-mode: luminosity;
+  }
+
+  .lookbook_five {
+    display: none;
+  }
+  .lookbook_six {
+    width: 25vw;
+    height: 60vh;
+    background-image: url(./lookbookimages/lookbook_6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 37%;
+    left: 40%;
+    transition: all .5s ease;
+    background-blend-mode: luminosity;
+  }
+
+  .lookbook_clicked {
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: contain;
+    animation-name: lookbook;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-direction: forwards, backwards;
+    opacity: 1;
+
+
+  }
+
+  .lookbook {
+    cursor: pointer;
+  position: absolute;
+  background-color:#1C0E0E;
+  z-index: 5;
+  opacity: 0.5;
+  transition: top, left,  .5s ease;
+  background-position: center;
+  /*transition: transform, opacity .3s ease;*/
+  }
+
+  .lookbook:hover {
+    transform: scale(1.01);
+
+    opacity: 0.7;
+  }
+
+}

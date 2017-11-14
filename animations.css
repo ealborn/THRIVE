@@ -17,7 +17,7 @@ svg#knapp {
 }
 
 .skugga, .rektangelhover, .pil {
-  stroke: white;
+  stroke: black;
 
 }
 .skugga, .rektangel, .rektangelhover {
@@ -25,14 +25,14 @@ svg#knapp {
 }
 .rektangel {
   fill: #ffffff;
-
+  stroke: black;
 
 
 }
 .rektangelhover {
 
   fill: transparent;
-  stroke: #0000ff;
+
   fill-rule: evenodd;
   stroke-dasharray:560px;
   stroke-dashoffset:560px;
@@ -41,9 +41,9 @@ svg#knapp {
 .skugga {
   fill: none;
   fill-rule: evenodd;
-  stroke-dasharray:295px;
+
   stroke-dashoffset:0;
-  transition: stroke-dashoffset 0.2s ease;
+  transition: transform 0.2s ease-out;
 
 }
 .pil {
@@ -52,7 +52,7 @@ svg#knapp {
   stroke-width: 1.5px;
   stroke-dasharray:18px;
   stroke-dashoffset:18px;
-  transition: transform 0.3s ease, stroke-dashoffset 0.5s ease, stroke 0.2s ease 0.3s;
+  transition: transform 0.2s ease, stroke-dashoffset 0.5s ease, stroke 0.2s ease;
 }
 .txt {
   font-family: 'Futura';
@@ -63,10 +63,10 @@ svg#knapp {
   letter-spacing: 3px;
   fill: black;
   transform:translate(118px, 32px);
-  transition: transform 0.3s ease, fill 0.2s ease 0.3s;
+  transition: transform 0.2s ease, fill 0.2s ease;
 }
 .rektangel {
-  transition: transform 0.5s ease-out;
+  transition: transform 0.2s ease-out;
   width: 263px;
 }
 .knappsvg {
@@ -74,19 +74,27 @@ svg#knapp {
   width: 263px;
 
 }
-.knapp:hover .skugga {
-  stroke-dashoffset:-296px;
-}
-.knapp:hover .pil, .knapp:hover .rektangelhover {
+
+.knapp:hover .knapp:hover .rektangelhover {
   stroke-dashoffset:0px;
-  stroke: #0000ff;
+
+}
+
+.knapp:hover .pil{
+  stroke-dashoffset: 0;
+
+  stroke: black;
 }
 .knapp:hover .txt {
-  fill: #0000ff;
-  transform:translate(113px, 40px);
+  fill: #76C883;
+  transform:translate(113px, 36px);
 }
 .knapp:hover .rektangel, .knapp:hover .rektangelhover, .knapp:hover .pil {
-  transform:translate(8px, 8px);
+  transform:translate(4px, 4px);
+}
+
+.knapp:hover .skugga {
+  transform: translate(-4px, -4px);
 }
 
 /*end buttons */
@@ -101,4 +109,42 @@ svg#knapp {
 }
 
 
-@keyframes
+@keyframes logoslideLeft {
+  0%,60% {
+    opacity: 0;
+    transform: translate(-2rem, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0,0);
+  }
+}
+@keyframes logoslideRight {
+  0%,60% {
+    opacity: 0;
+    transform: translate(1rem, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0,0);
+  }
+}
+
+/*Symbol SVGS*/
+.symbol {
+  width: 100px;
+  margin-bottom: 0.5rem;
+
+
+}
+
+.cls-1 {
+
+
+  transition: 1s ease;
+}
+
+svg:hover .cls-1 {
+
+  stroke-dashoffset: 0;
+}
