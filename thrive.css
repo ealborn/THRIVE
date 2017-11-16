@@ -725,8 +725,6 @@ background-position: center;
     justify-content: space-around;
     width: 70%;
 
-
-
   }
 
   .symbols_dashes {
@@ -735,10 +733,35 @@ background-position: center;
     background-color: black;
   }
 
-
-
   .symbols_lower {
     width: 100vw;
     height: 50vh;
     background-color: tomato;
+  }
+
+  /*section 9 footer*/
+  .section_9 {
+    height: 100vh;
+    width: 100vh;
+    background-color: #1C0E0E;
+  }
+  .pageUpper, .pageLower {
+    height: 50%;
+    width: 100vh;
+    margin: 0.5rem;
+    /*border-style: solid;
+    border-color: red;*/
+  }
+  .pageUpper > iframe {
+    width: 100vh;
+  }
+  .pageLower > p {
+    width: 100vh;
+    height: 100%;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: futura_medium;
+    color: #FFFFFF;
+    line-height: 24px;
   }
