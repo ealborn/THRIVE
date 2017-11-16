@@ -459,29 +459,39 @@ background-position: center;
      align-items: center;
      flex-direction: column;
    }
-   /*slide 1 wrapper*/
-   .test1wrap{
+   .blackline {
+
+   }
+   /*slide page wrapper*/
+   .testwrap1, .testwrap2{
      width: 21.5rem;
      height: 39.786rem;
      margin: 1rem;
      padding: 2.5rem;
    }
-   .test1wrap > h2 {
+   .testwrap1 > h2 {
      padding-top: 21%;
-     padding-bottom: 5.84%;
+     padding-bottom: 10.84%;
      font-size: 1.5rem;
+     /*text-indent: 2rem;*/
      font-family: 'futura_bold';
-     color: white;
+     color: #FFFFFF;
    }
-   .test1wrap > p {
+    .testwrap1 > p {
      font-size: 1rem;
      font-family: 'futura_medium';
-     color: white;
+     color: #FFFFFF;
+     padding-bottom: 10.84%;
    }
-   #swipa {
+   .swipebutton {
+     border-style: solid;
+     border-color: red;
      display: flex;
      flex-direction: column;
+     align-items: center;
      padding: 1rem;
+     width: 100%;
+     height: auto;
    }
 
    .scrollsnap {
@@ -504,35 +514,45 @@ background-position: center;
    }
 
    /*headline odling*/
-   .test2 > h1 {
-     height: 20vh;
+   .testwrap2 > h1 {
+     /*border-style: solid;
+     border-color: red;*/
+     height: 2.68rem;
      width: auto;
-     margin: 2vh;
+     margin-top: 13.385%;
+     margin-bottom: 6.771%;
      padding: 1vh;
-     font-size: 6vh;
+     font-size: 3rem;
      display: flex;
      justify-content: center;
+     align-items: center;
      font-family: 'parabola';
-     color: white;
+     color: #FFFFFF;
    }
 
    /*white t-shirt illustration*/
-   .test2 > img {
+   .testwrap2 > img {
+     /*border-style: solid;
+     border-color: red;*/
      display: flex;
-     height: 40vh;
-     margin: 2vh;
+     justify-content: center;
+     align-items: center;
+     height: 12.562rem;
+     width: 100%;
    }
 
    /*text below t-shirt*/
-   .test2 > p {
-     height: 40vh;
-     font-size: 2vh;
-     margin: 2vh;
-     padding: 2vh;
+   .testwrap2 > p {
+     /*border-style: solid;
+     border-color: red;*/
+     width: 100%;
+     margin-top:8.5%;
+     font-size: 1rem;
      display: flex;
      justify-content: center;
+     align-items: center;
      font-family: 'futura_medium';
-     color: white;
+     color: #FFFFFF;
    }
 
   .test2_clicked {
