@@ -440,117 +440,100 @@ background-position: center;
 
  /*Section 5 and first slideshow follows*/
 
-.section_5 {
-  width: 100vw;
-  height: 100vh;
-  background-color: grey;
-  display: flex;
-  flex-flow: row nowrap;
-  position: relative;
-}
+ .section_5 {
+   width: 100vw;
+   height: 100vh;
+   background-color: grey;
+   display: flex;
+   flex-flow: row nowrap;
+   position: relative;
+ }
 
-.test1 {
-  width: 100vw;
-  height: auto;
-  background-color: #76C8A8;
-  min-width: 100vw;
-  transition: all 1s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.innerGots {
-  margin: 1rem;
-  padding: 1.5rem;
-  height: 39.687rem;
-  width: 21.5rem;
-  display: flex;
-  flex-direction: column;
-}
-.cert{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 4rem;
-  line-height: 2rem;
-  font-size: 1.5rem;
-  font-family: 'futura_bold';
-  color: #FFFFFF;
-  /*margin: 14.312rem 0.25rem 2.437rem;*/
-}.gots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 10.72rem;
-}
-.gots > p{
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  font-family: 'futura_light';
-  color: #FFFFFF;
-}
+   .test1 {
+     width: 100vh;
+     height: 100vh;
+     background-color: #76C8A8;
+     min-width: 100vw;
+     transition: all 1s ease;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+   }
+   /*slide 1 wrapper*/
+   .test1wrap{
+     width: 21.5rem;
+     height: 39.786rem;
+     margin: 1rem;
+     padding: 2.5rem;
+   }
+   .test1wrap > h2 {
+     padding-top: 21%;
+     padding-bottom: 5.84%;
+     font-size: 1.5rem;
+     font-family: 'futura_bold';
+     color: white;
+   }
+   .test1wrap > p {
+     font-size: 1rem;
+     font-family: 'futura_medium';
+     color: white;
+   }
+   #swipa {
+     display: flex;
+     flex-direction: column;
+     padding: 1rem;
+   }
 
-}
-.inner1 > p {
-  display: flex;
-  justify-content: center;
-  width: 16.437rem;
-  height: 10.75rem;
-  margin-bottom: 14.625rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-family: 'futura_medium';
-  color: #FFFFFF;
-}
+   .scrollsnap {
+     scroll-snap-coordinate: 0% 100%;
+   }
 
-/*border just to see center of view*/
-  .test2 {
-    border-style: solid;
-    border-color: black;
-    height: 100%;
-    width: auto;
-    background-color: #76C8A8;
-    min-width: 100vw;
-    transition: all 1s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  /*headline odling*/
-  .test2 > h1 {
-    height: 20vh;
-    width: auto;
-    margin: 2vh;
-    padding: 1vh;
-    font-size: 6vh;
-    display: flex;
-    justify-content: center;
-    font-family: 'parabola';
-    color: white;
-  }
+ /*border just to see center of view*/
+   .test2 {
+     border-style: solid;
+     border-color: black;
+     height: 100%;
+     width: auto;
+     background-color: #76C8A8;
+     min-width: 100vw;
+     transition: all 1s ease;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+   }
 
-  /*white t-shirt illustration*/
-  .test2 > img {
-    display: flex;
-    height: 40vh;
-    margin: 2vh;
-  }
+   /*headline odling*/
+   .test2 > h1 {
+     height: 20vh;
+     width: auto;
+     margin: 2vh;
+     padding: 1vh;
+     font-size: 6vh;
+     display: flex;
+     justify-content: center;
+     font-family: 'parabola';
+     color: white;
+   }
 
-  /*text below t-shirt*/
-  .test2 > p {
-    height: 40vh;
-    font-size: 2vh;
-    margin: 2vh;
-    padding: 2vh;
-    display: flex;
-    justify-content: center;
-    font-family: 'futura_medium';
-    color: white;
-  }
+   /*white t-shirt illustration*/
+   .test2 > img {
+     display: flex;
+     height: 40vh;
+     margin: 2vh;
+   }
+
+   /*text below t-shirt*/
+   .test2 > p {
+     height: 40vh;
+     font-size: 2vh;
+     margin: 2vh;
+     padding: 2vh;
+     display: flex;
+     justify-content: center;
+     font-family: 'futura_medium';
+     color: white;
+   }
 
   .test2_clicked {
     margin-left: 100vw;
