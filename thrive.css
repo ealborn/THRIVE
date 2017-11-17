@@ -1,6 +1,7 @@
 
 html {
   font-size: 16px;
+  box-sizing: border-box;
 }
 * {
   box-sizing: border-box;
@@ -59,7 +60,7 @@ h6 {
 }
 
 .framelogo {
-  opacity: 1;
+  opacity: 0.5;
   position: fixed;
   width: 13.5rem;
   height: 2rem;
@@ -86,7 +87,7 @@ h6 {
     animation: 1.5s ease-in-out forwards logoslideRight;
 }
 .logotop {
-  top: 0.75rem;
+  top: 0.6rem;
   left: calc(50vw - 7rem);
 }
 .logoright {
@@ -96,7 +97,7 @@ h6 {
   transform-origin: top right;
 }
 .logobottom {
-  bottom: 0.75rem;
+  bottom: 0.4rem;
   left: calc(50vw - 7rem);
 }
 
@@ -128,7 +129,7 @@ h6 {
   margin-left: 0;
   height: 60vh;
   width: 90vw;
-  padding-top: 15vh;
+  padding-top:10vh;
   padding-left: 15vw;
 
 }
@@ -137,7 +138,8 @@ h6 {
   font-family: Parabola;
   text-align: left;
   font-weight: lighter;
-  font-size: 2.6em;
+  font-size-adjust: auto;
+  font-size: 2.8rem;
   line-height: 1.1;
   color: white;
   transition: all .1s ease;
@@ -183,7 +185,7 @@ h6 {
 
 
 .section_2_ingress_wrap {
-  padding-top: 10vh;
+  padding-top: 12vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -196,6 +198,7 @@ h6 {
 
 .section_2_text_wrap {
 
+
   width: 100vw;
   background-color: white;
 }
@@ -205,11 +208,11 @@ h6 {
   font-family: 'Futura';
   font-size: 20px;
   line-height: 1.5;
-  padding-top: 10px;
+  padding-top: 1.5rem;
   padding-left: 56px;
   padding-right: 56px;
   margin: 0;
-  height: 80vh;
+
 }
 
 /*section 3 follows*/
@@ -527,6 +530,14 @@ background-position: center;
     display: flex;
     flex-flow: row nowrap;
     overflow: scroll;
+  }
+
+  .infographics_text_wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
 
 
   }
@@ -558,34 +569,77 @@ background-position: center;
     background-position: 40% 50%;
   }
 
-  .infographics_svg_1 {
+  .infographics_1 {
     width: 50vw;
-    max-width: 395px;
+    max-width: 300px;
     max-height: 395px;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
   }
 
-  .infographics_1_ingress {
+  .infographics_ingress {
     font-size: 5em;
     font-weight: 100;
     margin-top: 0.5em;
     color: #76C8A8;
+    display: flex;
+    justify-content: center;
   }
 
-  .infographics_1_text {
-    width: 80vw;
-    max-width: 300px;
-    text-align: center;
+
+  .infographics_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 15rem;
     color: white;
+    font-size: 12px;
+    text-align: center;
   }
 
   .slide_two {
-    background-image: url(./Infographics_bilder/infographics_bg_2.png)
+    background-image: url(./Infographics_bilder/infographics_bg_2.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+  }
+
+  .infographics_2 {
+    background-image: url(./Infographics_bilder/infographics-2.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 90vw;
+    height: 45vh;
+    max-height: 40rem;
+    max-width: 50rem;
+    margin-top: 7rem;
+    margin-bottom: 0rem;
+
   }
 
   .slide_three {
-    background-image: url(./Infographics_bilder/infographics_bg_3.png)
+    background-image: url(./Infographics_bilder/infographics_bg_3.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding-top: 6rem;
   }
 
+  .infographics_3 {
+    background-image: url(infographics_bilder/infographics-3.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 90vw;
+    height: 45vh;
+    max-height: 40rem;
+    max-width: 50rem;
+
+    margin-bottom: 0rem;
+  }
 
   /*// Section 7 - symbols*/
 
@@ -610,47 +664,128 @@ background-position: center;
     width: 70%;
 
     display: flex;
-    justify-content: space-around;
+    flex-flow: row wrap;
     align-items: center;
-    flex-direction:row;
+    justify-content: center;
+
   }
 
 .symbols_svg_wrap {
   display: flex;
-  width: 70%;
-
+  width: 50%;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  padding-top: 4rem;
+  padding-top: 0;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 
 }
 
-  .symboltext {
+.symboltext {
+  padding-top: 0.5rem;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 3px;
-  }
-  .symbols_dash_wrap {
-
-    display: flex;
-    justify-content: space-around;
-    width: 70%;
+    text-align: center;
+    transition: all .5s ease;
+}
 
 
+.symbols_dash_wrap_webb {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  display: none;
 
-  }
+}
 
-  .symbols_dashes {
-    height: 5rem;
-    width: 0.25rem;
+  .symbols_dashes_webb {
+
+    width: 0.15rem;
     background-color: black;
+
+    transition: all .3s ease-out;
+  }
+  .symbol {
+    width: 5rem;
+    margin-bottom: 0.5rem;
+    transition: opacity .1s, transform .1s ease;
+    cursor: pointer;
+  }
+  .symbol:hover{
+    opacity: .5;
+    transform: scale(1.05)
   }
 
+  .symbol_clicked {
+    fill: #76C8A8;
+    transition: fill .2s ease .2s;
+    transform: scale(1.05);
 
+    opacity: .75;
+  }
 
   .symbols_lower {
+    display: flex;
+    justify-content: center;
     width: 100vw;
     height: 50vh;
-    background-color: tomato;
+    background-color:  #76C8A8;
+  }
+
+  .symbols_textwrap_organic {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 75%;
+    max-width: 20rem;
+    margin-bottom: 1rem;
+    transition: all .5s ease;
+  }
+
+  .symbols_ingress {
+    color: black;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 0.75rem;
+
+    top: 2rem;
+
+
+  }
+
+  .symbols_text_organic {
+    transition: opacity .4s ease;
+
+  }
+
+
+
+  .textdashmobile {
+    height: 0.125rem;
+    width: 0%;
+    background-color: black;
+    transition: width .3s ease-out;
+    margin-right: 3px;
+  }
+
+
+  .textdash_show {
+    height: 0.125rem;
+    width: 100%;
+    background-color: black;
+    transition: all .2s ease-in .4s;
+    /*animation: showDash .5s forwards alternate;*/
+
+  }
+
+  .dashwrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }

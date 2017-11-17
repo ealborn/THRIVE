@@ -129,22 +129,3 @@ svg#knapp {
     transform: translate(0,0);
   }
 }
-
-/*Symbol SVGS*/
-.symbol {
-  width: 100px;
-  margin-bottom: 0.5rem;
-
-
-}
-
-.cls-1 {
-
-
-  transition: 1s ease;
-}
-
-svg:hover .cls-1 {
-
-  stroke-dashoffset: 0;
-}
