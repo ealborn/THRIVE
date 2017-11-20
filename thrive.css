@@ -460,6 +460,12 @@ background-position: center;
      flex-direction: column;
    }
    .blackline {
+     position: absolute;
+     left: -2rem;
+     top: 3rem;
+    width: 5rem;
+    height: 0.125rem;
+    background-color: red;
 
    }
    /*slide page wrapper*/
@@ -474,6 +480,7 @@ background-position: center;
      padding-bottom: 10.84%;
      font-size: 1.5rem;
      /*text-indent: 2rem;*/
+     text-align: center;
      font-family: 'futura_bold';
      color: #FFFFFF;
    }
@@ -754,6 +761,17 @@ background-position: center;
   }
   .pageUpper > iframe {
     width: 100vh;
+    position: absolute;
+  }
+  .pageUpper > img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
   }
   .pageLower > p {
     width: 100vh;
