@@ -6,6 +6,7 @@ html {
 * {
   box-sizing: border-box;
   margin: 0;
+  scroll-behavior: smooth;
 }
 p{
 
@@ -73,7 +74,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
-  transition: color .4s ease;
+  transition: all .4s ease ;
 
 
 
@@ -606,16 +607,35 @@ background-position: center;
     display: flex;
     flex-flow: row nowrap;
 
+
   }
 
 
 
   .infographics_wrap{
-    width: 100vw;
+    width: 300vw;
     height: 100vh;
     display: flex;
     flex-flow: row nowrap;
     overflow: scroll;
+
+
+
+  }
+  .info_buttons_wrap {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 4rem 0 4rem;
+    z-index: 10;
+    overflow: scroll;
+    padding-bottom: 1.25rem;
+  }
+  .infographic_buttons {
+  cursor: pointer;
   }
 
   .infographics_text_wrap {
@@ -632,7 +652,7 @@ background-position: center;
     width: 100vw;
     display: flex;
     flex-flow: row nowrap;
-    overflow: scroll;
+
 
 
   }
@@ -640,9 +660,35 @@ background-position: center;
     height: 100vh;
     width: 100vw;
     min-width: 100vw;
-    overflow:scroll;
-
   }
+
+    .infographics_1 {
+      height: 40vh;
+      width: 40vh;
+      margin-top: 8rem;
+
+    }
+
+    .infographics_ingress {
+      font-size: 5em;
+      font-weight: 100;
+      min-width: 10rem;
+      margin-top: 0;
+      color: #76C8A8;
+      display: flex;
+      justify-content: center;
+    }
+
+
+    .infographics_text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 15rem;
+      color: white;
+      font-size: 12px;
+      text-align: center;
+    }
 
   .slide_one {
     display: flex;
@@ -653,35 +699,9 @@ background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 40% 50%;
+    padding-bottom: 5rem
   }
 
-  .infographics_1 {
-    height: 40vh;
-    width: 40vh;
-    margin-top: 8rem;
-
-  }
-
-  .infographics_ingress {
-    font-size: 5em;
-    font-weight: 100;
-    min-width: 10rem;
-    margin-top: 0;
-    color: #76C8A8;
-    display: flex;
-    justify-content: center;
-  }
-
-
-  .infographics_text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 15rem;
-    color: white;
-    font-size: 12px;
-    text-align: center;
-  }
 
   .slide_two {
     background-image: url(./Infographics_bilder/infographics_bg_2.png);
@@ -689,6 +709,8 @@ background-position: center;
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
   }
 
   .infographics_2 {
@@ -712,6 +734,8 @@ background-position: center;
     align-items: center;
     flex-flow: column nowrap;
     padding-top: 6rem;
+    padding-bottom: 2rem;
+    background-position: left;
   }
 
   .infographics_3 {
@@ -723,7 +747,7 @@ background-position: center;
     height: 35vh;
     max-height: 40rem;
     max-width: 50rem;
-    margin-top: 2rem;
+    margin-top: 0rem;
     margin-bottom: 0rem;
   }
 

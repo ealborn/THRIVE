@@ -1,12 +1,12 @@
 
 // Loop for generating our button design with a new "a href" element with a classname of "knapp"
 
-var x = document.getElementsByClassName("knapp");
-var i;
-for (i = 0; i < x.length; i++) {
-  var knapptxt = x[i].textContent; x[i].innerHTML='<svg id="knapp" class="knappsvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244 60"><path id="skugga" class="skugga" d="M234 10h8v48H10v-7.9"/><path id="rektangel" class="rektangel" d="M2 2h232v48H2z"/><path id="rektangelhover" class="rektangelhover" d="M2 2h232v48H2z"/><path id="pil" class="pil" d="M198.5 26.9h8.2v-2l2 2-2 2v-2"/><text class="txt">'+ knapptxt +'</text></svg>'
-
-  ;}
+// var x = document.getElementsByClassName("knapp");
+// var i;
+// for (i = 0; i < x.length; i++) {
+//   var knapptxt = x[i].textContent; x[i].innerHTML='<svg id="knapp" class="knappsvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244 60"><path id="skugga" class="skugga" d="M234 10h8v48H10v-7.9"/><path id="rektangel" class="rektangel" d="M2 2h232v48H2z"/><path id="rektangelhover" class="rektangelhover" d="M2 2h232v48H2z"/><path id="pil" class="pil" d="M198.5 26.9h8.2v-2l2 2-2 2v-2"/><text class="txt">'+ knapptxt +'</text></svg>'
+//
+//   ;}
 
 
   // below will be script for lookbook. Still under development
@@ -169,31 +169,40 @@ for (i = 0; i < x.length; i++) {
     let secOne = document.querySelector('.section_1').getBoundingClientRect().y;
     let secTwo = document.querySelector('.section_2').getBoundingClientRect().y;
     let secThree = document.querySelector('.section_3').getBoundingClientRect().y;
-
+    let secFive = document.querySelector('.section_5').getBoundingClientRect().y;
     let secSix = document.querySelector('.section_6').getBoundingClientRect().y;
+    let secSeven = document.querySelector('.section_7').getBoundingClientRect().y;
 
-    let frameLogo = document.querySelectorAll ('.logotext');
+    let frameLogo = document.querySelectorAll('.logotext');
+    let frameDash = document.querySelectorAll('.logodash');
 
-
-
-
-
-      for (frameLogo of frameLogo) {
+      for (frameLogo of frameLogo){
 
         if (secOne <= 5) {
           frameLogo.style.color = "white";
         }
-        if (secTwo <= 5) {
+         if (secTwo <= 20) {
         frameLogo.style.color = "black";
         }
-
-        if (secThree <= 0) {
-
-
-        console.log(createFrame.innerHTML);
+        if (secThree <= 5) {
+        frameLogo.style.color = "white";
+      }
+        if (secFive <= 20) {
+        frameLogo.style.color = "white";
+      }
+        if (secSix <= 30 ) {
         frameLogo.style.color = "white";
 
-        }
+      }
+        if (secSix <= 40 && window.innerWidth <= 400 ) {
+        frameLogo.style.color = "white";
+        document.querySelector('.logobottom').style.opacity = "0";
+      }
+        if (secSeven <= 40) {
+        frameLogo.style.color = "black";
+      }
+
+
       }
 
 
@@ -209,45 +218,107 @@ for (i = 0; i < x.length; i++) {
     //         });
 
 
-//--------------Percentage Counter ----------//
-    function animatePercentage(id, start, end, duration) {
-
-
-        let range = end - start;
-        let current = start;
-        let increment = end > start? 1 : -1;
-        let stepTime = Math.abs(Math.floor(duration / range) * 2);
-        let obj = document.getElementById('percentage');
-        let timer = setInterval(function() {
-            current += increment;
-            percentage.innerHTML = current + '%';
-            if (current == end) {
-                clearInterval(timer);
-            }
-        }, stepTime);
 
 
 
 
-    }
-
-
-      let pieChart = document.querySelector('circle');
-    if (secSix <= 40 ) {
-
-        pieChart.classList.add('circletrig');
-
-        animatePercentage("value", 0, 98, 1300);
 
 
 
-    };
-
-
-
-
-           animatePercentage("value", 0, 98, 1300);
 
 
 
     });
+
+    //--------------Percentage Counter ----------//
+        function animatePercentage(id, start, end, duration) {
+
+
+            let range = end - start;
+            let current = start;
+            let increment = end > start? 1 : -1;
+            let stepTime = Math.abs(Math.floor(duration / range) * 2);
+            let obj = document.getElementById('percentage');
+            let timer = setInterval(function() {
+                current += increment;
+                percentage.innerHTML = current + '%';
+                if (current == end) {
+                    clearInterval(timer);
+                }
+            }, stepTime);
+        }
+
+
+    animatePercentage("value", 0, 98, 1300);
+
+    let pieChart = document.querySelector('circle');
+
+
+      pieChart.classList.add('circletrig');
+
+
+        //--------------INFOGRAPHICS SLIDER ----------//
+//         let infoRight = document.getElementById('info-btn_right');
+// let infoButtons = document.querySelectorAll('.infographic_buttons');
+// infoRight.addEventListener("click",function() {
+//   console.log(infoButtons);
+//
+//
+//
+//
+// });
+let infoRight = document.getElementById('info-btn_right');
+$('#info-btn_right, #info-btn_left').click(function() {
+
+  let secSix = document.querySelector('.section_6');
+  let infoSlideWidth = document.querySelector('.infographics_wrap');
+  let widthValue = window.innerWidth;
+
+  if ($(this).is("#info-btn_right")) {
+    infoSlideWidth.scrollBy(widthValue, 0);
+
+  } else if ($(this).is("#info-btn_left")) {
+    infoSlideWidth.scrollBy(-widthValue, 0);
+  }
+
+  // infoSlideWidth.scroll({top: 0, left: widthValue, behavior: 'smooth'});
+
+
+
+
+
+
+  // let infoRight = document.getElementById('info-btn_right');
+  // if (!infoRight.classList.contains('onceright')) {
+  //   $(".slide_two")[0].scrollIntoView({
+  //     behavior: "smooth",
+  //     block: "start"
+  // });
+  //   infoRight.classList.add('onceright');
+  //   console.log(infoRight);
+  // } else {
+  //     $(".slide_three")[0].scrollIntoView({
+  //       behavior: "smooth", // or "auto" or "instant"
+  //       block: "start" // or "end"
+  //   });
+  // }
+
+});
+  // $('.once').click(function() {
+  //
+  //
+  //   $(".slide_three")[0].scrollIntoView({
+  //     behavior: "smooth", // or "auto" or "instant"
+  //     block: "start" // or "end"
+  //   });
+  // });
+  //
+  // $('.test3knapp').click(function() {
+  //
+  //   $(".test1")[0].scrollIntoView({
+  //     behavior: "smooth", // or "auto" or "instant"
+  //     block: "start" // or "end"
+  //   });
+  // });
+
+// });

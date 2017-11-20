@@ -30,6 +30,7 @@
   height: 0.1rem;
   margin-top: 1rem;
   background-color: #76C883;
+  transition: all .3s ease;
 
 }
 
@@ -83,11 +84,22 @@
 
 
 
-
-
-
-
 @media screen and (min-width: 1000px) {
+  .knapp:hover {
+    transform: translate(0.25rem, 0.25rem);
+
+  }
+
+  .knapp:hover:before {
+    transform: translate(-0.5rem, -0.5rem);
+  }
+  .knapp:hover .knp-forward {
+    animation: 0.8s 0.2s infinite ease-out forward;
+  }
+
+  .knapp:hover .knp-down {
+    animation: 0.8s 0.2s  infinite ease-out down;
+  }
 
 .ingress {
   font-family: Parabola;
@@ -326,6 +338,23 @@
   }
 
   /*Infographics webb*/
+
+  .info_buttons_wrap {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6rem 0 6rem;
+    z-index: 10;
+    overflow: scroll;
+    padding-bottom: 2rem;
+  }
+  .infographic_buttons {
+  cursor: pointer;
+  }
+
   .slide_one {
     display: flex;
     justify-content: center;
@@ -335,6 +364,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 40% 50%;
+    padding-bottom: 0rem;
   }
 
   .infographics_1 {
@@ -372,8 +402,6 @@
 
   .infographics_ingress {
     border-right: .1rem solid white;
-
-
     font-size: 5em;
     font-weight: 100;
     margin-top: 0em;
@@ -387,8 +415,19 @@
     color: white;
   }
 
+  .slide_two {
+    background-image: url(./Infographics_bilder/infographics_bg_2.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
   .slide_three {
     background-image: url(./Infographics_bilder/infographics_bg_3.png);
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -407,7 +446,7 @@
     max-height: 40rem;
     max-width: 50rem;
     margin-top: 6rem;
-    margin-bottom: 0rem;
+    margin-bottom: 1rem;
   }
 
   /*SYMBOLS WEBB*/

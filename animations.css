@@ -3,98 +3,121 @@
 /*Following is buttons*/
 
 
-#knapp {
-  width: 263px;
-  height: 56px;
-  z-index: 1;
+.w12 {
+min-width: 16rem;
 }
+
 .knapp {
+  margin: 0 1rem 1rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight:  lighter;
+  display: inline-flex;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  padding: 0.0625rem 1.25rem 0 1.375rem;
+  letter-spacing: 0.2rem;
   position: relative;
-  width: 263px;
-  height: 56px;
-  margin: 10px;
+  z-index: 10;
+  transition: transform 0.2s ease;
+    font-family: 'futura_bold';
+}
+
+.knapp:hover {
+  transform: translate(0rem, 0rem);
 
 }
 
-.skugga, .rektangelhover, .pil {
-  stroke: black;
+.knapp:hover:before {
+  transform: translate(0rem, 0rem);
+}
 
-}
-.skugga, .rektangel, .rektangelhover {
-  stroke-width: 4px;
-}
-.rektangel {
-  fill: #ffffff;
-  stroke: black;
-
-
-}
-.rektangelhover {
-
-  fill: transparent;
-
-  fill-rule: evenodd;
-  stroke-dasharray:560px;
-  stroke-dashoffset:560px;
-  transition: stroke-dashoffset 0.3s linear 0.2s, transform 0.3s ease;
-}
-.skugga {
-  fill: none;
-  fill-rule: evenodd;
-
-  stroke-dashoffset:0;
-  transition: transform 0.2s ease-out;
-
-}
-.pil {
-  stroke: #cccccc;
-  fill: none;
-  stroke-width: 1.5px;
-  stroke-dasharray:18px;
-  stroke-dashoffset:18px;
-  transition: transform 0.2s ease, stroke-dashoffset 0.5s ease, stroke 0.2s ease;
-}
-.txt {
-  font-family: 'Futura';
-  font-weight: 700;
-  text-transform: uppercase;
-  text-anchor: middle;
-  font-size: 14px;
-  letter-spacing: 3px;
-  fill: black;
-  transform:translate(118px, 32px);
-  transition: transform 0.2s ease, fill 0.2s ease;
-}
-.rektangel {
-  transition: transform 0.2s ease-out;
-  width: 263px;
-}
-.knappsvg {
+.knapp::before {
   position: absolute;
-  width: 263px;
+  top: 0.5rem;
+  left: 0.5rem;
+  content: '';
+  width : calc(100% - 0.5rem);
+  height: 2.5rem;
+  border: 0.25rem solid;
+  z-index: -2;
+  transition: transform 0.2s ease;
 
 }
 
-.knapp:hover .knapp:hover .rektangelhover {
-  stroke-dashoffset:0px;
-
+.knapp::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width : calc(100% - 0.5rem);
+  height: 2.5rem;
+  border: 0.25rem solid;
+  background-color: white;
+  z-index: -1;
+  font-family: 'futura_medium', sans-serif;
 }
 
-.knapp:hover .pil{
-  stroke-dashoffset: 0;
+.knp-forward, .knp-down {
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  font-weight: bolder;
+  margin-left: 0.5rem;
+  display: inline-block;
+  text-align: right;
+  align-items: center;
+  color: inherit;
+  transition: color 0.5s ease;
+  opacity: 0;
+}
 
-  stroke: black;
-}
-.knapp:hover .txt {
-  fill: #76C883;
-  transform:translate(113px, 36px);
-}
-.knapp:hover .rektangel, .knapp:hover .rektangelhover, .knapp:hover .pil {
-  transform:translate(4px, 4px);
+.knapp:hover .knp-forward {
+  animation: nothing
 }
 
-.knapp:hover .skugga {
-  transform: translate(-4px, -4px);
+.knapp:hover .knp-down {
+  animation: nothing
+}
+
+@keyframes forward {
+  0% {
+    transform: translate(0rem, 0);
+    opacity: 1;
+  }
+  33% {
+    transform: translate(1rem, 0);
+    opacity: 0;
+  }
+  66% {
+    transform: translate(-0.5rem, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0rem, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  33% {
+    transform: translate(0, 0.5rem);
+    opacity: 0;
+  }
+  66% {
+    transform: translate(0, -1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0 0);
+    opacity: 1;
+  }
 }
 
 /*end buttons */
