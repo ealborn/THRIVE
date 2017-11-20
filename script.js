@@ -124,6 +124,8 @@ for (i = 0; i < x.length; i++) {
       }, 500);
     }
 
+
+      // Symbol and dashes script
     if (!$(this).hasClass('symbol_clicked')) {
       $(this).addClass('symbol_clicked');
       $('.symbol').not(this).removeClass('symbol_clicked');
@@ -145,34 +147,107 @@ for (i = 0; i < x.length; i++) {
     mobileDash.classList.add('textdash_show');
 
 
-      //DASHES----------------------!
+      //CHANGE COLOR OF FRAME LOGOS----------------------!
 
-      // OLD STUFF, LOOK UP
-    // if ($(this).hasClass('symbol_clicked')) {
-    //   if($(this).hasClass('symbol_organic')) {
-    //     $('.textdashmobile').not(this).removeClass('textdash_show')
-    //     $('.textdashmobile.dash_organic').toggleClass('textdash_show');
-    //     $('.symbols_dashes_webb').not(this).removeClass('webbdash_show');
-    //     $('.dashone_organic').addClass('webbdash_show');
-    //
-    //   } else if ($(this).hasClass('symbol_quality')) {
-    //       $('.textdashmobile').not(this).removeClass('textdash_show');
-    //       $('.textdashmobile.dash_quality').toggleClass('textdash_show');
-    //       $('.symbols_dashes_webb').not(this).removeClass('webbdash_show');
-    //       $('.dashtwo_quality').toggleClass('webbdash_show');
-    //
-    //   } else if ($(this).hasClass('symbol_fair')) {
-    //       $('.textdashmobile').not(this).removeClass('textdash_show')
-    //       $('.textdashmobile.dash_fair').toggleClass('textdash_show');
-    //       $('.symbols_dashes_webb').not(this).removeClass('webbdash_show');
-    //       $('.dashthree_fair').toggleClass('webbdash_show');
-    //
-    //   } else if ($(this).hasClass('symbol_vegan')) {
-    //       $('.textdashmobile').not(this).removeClass('textdash_show')
-    //       $('.textdashmobile.dash_vegan').toggleClass('textdash_show');
-    //       $('.symbols_dashes_webb').not(this).removeClass('webbdash_show');
-    //       $('.dashfour_vegan').toggleClass('webbdash_show');
-    //   }
-    //
-    // }
+
+
+
+
+
+
+
+
+
   });
+
+
+
+  window.addEventListener("scroll",function() {
+    let frameContainer = document.getElementsByClassName('.framebox').innerHTML;
+    let createFrame = document.createElement('div');
+
+    let secOne = document.querySelector('.section_1').getBoundingClientRect().y;
+    let secTwo = document.querySelector('.section_2').getBoundingClientRect().y;
+    let secThree = document.querySelector('.section_3').getBoundingClientRect().y;
+
+    let secSix = document.querySelector('.section_6').getBoundingClientRect().y;
+
+    let frameLogo = document.querySelectorAll ('.logotext');
+
+
+
+
+
+      for (frameLogo of frameLogo) {
+
+        if (secOne <= 5) {
+          frameLogo.style.color = "white";
+        }
+        if (secTwo <= 5) {
+        frameLogo.style.color = "black";
+        }
+
+        if (secThree <= 0) {
+
+
+        console.log(createFrame.innerHTML);
+        frameLogo.style.color = "white";
+
+        }
+      }
+
+
+
+
+
+
+
+    // secSix.addEventListener("scroll", () => {
+    //
+    //             let xPos = $('.slide_one').offset().left;
+    //             console.log(xPos);
+    //         });
+
+
+//--------------Percentage Counter ----------//
+    function animatePercentage(id, start, end, duration) {
+
+
+        let range = end - start;
+        let current = start;
+        let increment = end > start? 1 : -1;
+        let stepTime = Math.abs(Math.floor(duration / range) * 2);
+        let obj = document.getElementById('percentage');
+        let timer = setInterval(function() {
+            current += increment;
+            percentage.innerHTML = current + '%';
+            if (current == end) {
+                clearInterval(timer);
+            }
+        }, stepTime);
+
+
+
+
+    }
+
+
+      let pieChart = document.querySelector('circle');
+    if (secSix <= 40 ) {
+
+        pieChart.classList.add('circletrig');
+
+        animatePercentage("value", 0, 98, 1300);
+
+
+
+    };
+
+
+
+
+           animatePercentage("value", 0, 98, 1300);
+
+
+
+    });

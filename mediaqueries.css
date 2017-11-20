@@ -71,11 +71,11 @@
 }
 
 .textdashmobile {
-  visibility: hidden;
+
   height: 0.125rem;
 
   background-color: black;
-    transition: width .3s ease-out;
+    transition: width .3s ease-out .3s;
   margin-right: 3px;
 }
 
@@ -338,11 +338,13 @@
   }
 
   .infographics_1 {
-    width: 50vw;
-    max-width: 300px;
-    max-height: 395px;
-    margin-top: 6rem;
-    margin-bottom: 5rem;
+    height: 100vh;
+    width: 100vw;
+
+    max-height: 300px;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    transition: all .3s ease;
   }
 
   .infographics_2 {
@@ -361,6 +363,8 @@
 
   .infographics_text_wrap {
     flex-flow: row nowrap;
+    height: 10rem
+
 
 
 
@@ -442,7 +446,7 @@
     align-items: center;
     justify-content: flex-end;
     padding-top: 4rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
   }
 
   .symboltext {
@@ -496,6 +500,15 @@
     height: 6rem;
     transition: all .3s ease .2s;
 
+  }
+
+  .textdashmobile {
+    visibility: hidden;
+    height: 0.125rem;
+
+    background-color: black;
+      transition: width .3s ease-out .3s;
+    margin-right: 3px;
   }
   .symbols_lower {
     width: 100vw;

@@ -15,22 +15,27 @@ body {
   margin: 0;
   max-width: 100vw;
   height: 100vh;
-  font-family: 'Futura';
-  -webkit-overflow-scrolling: touch;
+  font-family: 'futura_medium';
+
 
 }
 @font-face {
   font-family: 'Parabola';
-  src: url('../momentiris/thrive/Fonts/parabolaweb.ttf');
+  src: url('Fonts/parabolaweb.ttf');
 }
 
 @font-face {
-  font-family: 'FuturaLight';
-  src: url('../momentiris/thrive/Fonts/futura_light.ttf');
+  font-family: 'futura_light';
+  src: url('Fonts/futura_light.ttf');
 }
 @font-face {
-  font-family: 'FuturaMedium';
-  src: url('../momentiris/thrive/Fonts/Futura_Medium.otf');
+   font-family: 'futura_medium';
+   src: url('Fonts/futura_medium.ttf');
+}
+
+@font-face {
+   font-family: 'futura_bold';
+   src: url('Fonts/futura_bold.ttf');
 }
 
 h1 {
@@ -60,7 +65,7 @@ h6 {
 }
 
 .framelogo {
-  opacity: 0.5;
+  opacity: 1;
   position: fixed;
   width: 13.5rem;
   height: 2rem;
@@ -68,6 +73,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
+  transition: color .4s ease;
 
 
 
@@ -83,8 +89,11 @@ h6 {
 }
 
 .logotext {
+  color: white;
   height: 2rem;
-    animation: 1.5s ease-in-out forwards logoslideRight;
+    animation: 1.5s ease-in-out 1 forwards logoslideRight;
+    transition: color 1s ease;
+
 }
 .logotop {
   top: 0.6rem;
@@ -205,7 +214,7 @@ h6 {
 
 .section_2_text_webb {
   color: #76C8A8;
-  font-family: 'Futura';
+  font-family: 'futura_medium';
   font-size: 20px;
   line-height: 1.5;
   padding-top: 1.5rem;
@@ -307,14 +316,7 @@ z-index: 10;
 
 }
 
-/*.lookbook_one::after {
-  content: " ";
-  background-color: blue;
-  position: absolute;
-  width: 100%;
-  height: 100%;
 
-}*/
 
 
 .lookbook_two {
@@ -438,38 +440,122 @@ background-position: center;
 
  /*Section 5 and first slideshow follows*/
 
-.section_5 {
-  width: 100vw;
-  height: 100vh;
-  background-color: grey;
-  display: flex;
-  flex-flow: row nowrap;
-  position: relative;
-}
+ .section_5 {
+   width: 100vw;
+   height: 100vh;
+   background-color: grey;
+   display: flex;
+   flex-flow: row nowrap;
+   position: relative;
+ }
 
-  .test1 {
-    width: 100vw;
-    height: 100vh;
-    background-color: red;
-    min-width: 100vw;
-    transition: all 1s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
+   .test1 {
+     width: 100vh;
+     height: 100vh;
+     background-color: #76C8A8;
+     min-width: 100vw;
+     transition: all 1s ease;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
 
 
-  .test2 {
-    width: 100vw;
-    height: 100vh;
-    background-color: green;
-    min-width: 100vw;
-    transition: all 1s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+   }
+   .blackline {
+
+   }
+   /*slide page wrapper*/
+   .testwrap1, .testwrap2{
+     width: 21.5rem;
+     height: 39.786rem;
+     margin: 1rem;
+     padding: 2.5rem;
+   }
+   .testwrap1 > h2 {
+     padding-top: 21%;
+     padding-bottom: 10.84%;
+     font-size: 1.5rem;
+     /*text-indent: 2rem;*/
+     font-family: 'futura_bold';
+     color: #FFFFFF;
+   }
+    .testwrap1 > p {
+     font-size: 1rem;
+     font-family: 'futura_medium';
+     color: #FFFFFF;
+     padding-bottom: 10.84%;
+   }
+   .swipebutton {
+     border-style: solid;
+     border-color: red;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 1rem;
+     width: 100%;
+     height: auto;
+   }
+
+   .scrollsnap {
+     scroll-snap-coordinate: 0% 100%;
+   }
+
+ /*border just to see center of view*/
+   .test2 {
+     border-style: solid;
+     border-color: black;
+     height: 100%;
+     width: auto;
+     background-color: #76C8A8;
+     min-width: 100vw;
+     transition: all 1s ease;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+   }
+
+   /*headline odling*/
+   .testwrap2 > h1 {
+     /*border-style: solid;
+     border-color: red;*/
+     height: 2.68rem;
+     width: auto;
+     margin-top: 13.385%;
+     margin-bottom: 6.771%;
+     padding: 1vh;
+     font-size: 3rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: 'parabola';
+     color: #FFFFFF;
+   }
+
+   /*white t-shirt illustration*/
+   .testwrap2 > img {
+     /*border-style: solid;
+     border-color: red;*/
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 12.562rem;
+     width: 100%;
+   }
+
+   /*text below t-shirt*/
+   .testwrap2 > p {
+     /*border-style: solid;
+     border-color: red;*/
+     width: 100%;
+     margin-top:8.5%;
+     font-size: 1rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: 'futura_medium';
+     color: #FFFFFF;
+   }
 
   .test2_clicked {
     margin-left: 100vw;
@@ -478,7 +564,7 @@ background-position: center;
   .test3 {
     width: 100vw;
     height: 100vh;
-    background-color: blue;
+    background-color: #76C8A8;
     min-width: 100vw;
     transition: all 1s ease;
     display: flex;
@@ -497,8 +583,9 @@ background-position: center;
     display: flex;
     justify-content: center;
     height: 67px;
-    background-color: blue;
+    background-color: #1C0E0E;
     overflow: scroll;
+    color: white;
   }
 
   .navigationwrap {
@@ -511,7 +598,6 @@ background-position: center;
     scroll-behavior: auto;
 
   }
-
   /*Section 6 will be under this */
 
   .section_6 {
@@ -519,7 +605,7 @@ background-position: center;
     height: 100vh;
     display: flex;
     flex-flow: row nowrap;
-    overflow: scroll;
+
   }
 
 
@@ -570,17 +656,17 @@ background-position: center;
   }
 
   .infographics_1 {
-    width: 50vw;
-    max-width: 300px;
-    max-height: 395px;
-    margin-top: 6rem;
-    margin-bottom: 2rem;
+    height: 40vh;
+    width: 40vh;
+    margin-top: 8rem;
+
   }
 
   .infographics_ingress {
     font-size: 5em;
     font-weight: 100;
-    margin-top: 0.5em;
+    min-width: 10rem;
+    margin-top: 0;
     color: #76C8A8;
     display: flex;
     justify-content: center;
@@ -611,7 +697,7 @@ background-position: center;
     background-size: contain;
     background-position: center;
     width: 90vw;
-    height: 45vh;
+    height: 32vh;
     max-height: 40rem;
     max-width: 50rem;
     margin-top: 7rem;
@@ -634,10 +720,10 @@ background-position: center;
     background-size: contain;
     background-position: center;
     width: 90vw;
-    height: 45vh;
+    height: 35vh;
     max-height: 40rem;
     max-width: 50rem;
-
+    margin-top: 2rem;
     margin-bottom: 0rem;
   }
 
@@ -789,3 +875,32 @@ background-position: center;
     justify-content: center;
     align-items: center;
   }
+
+
+/*SECTION 8 - FOOTER GOES HERE */
+
+.section_9 {
+  height: 100vh;
+  width: 100vh;
+  background-color: #1C0E0E;
+}
+.pageUpper, .pageLower {
+  height: 50%;
+  width: 100vh;
+  margin: 0.5rem;
+  /*border-style: solid;
+  border-color: red;*/
+}
+.pageUpper > iframe {
+  width: 100vh;
+}
+.pageLower > p {
+  width: 100vh;
+  height: 100%;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: futura_medium;
+  color: #FFFFFF;
+  line-height: 24px;
+}
