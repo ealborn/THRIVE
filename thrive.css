@@ -464,7 +464,7 @@ background-position: center;
 
    }
    /*slide page wrapper*/
-   .testwrap1, .testwrap2{
+   .testwrap1, .testwrap2 {
      width: 21.5rem;
      height: 39.786rem;
      margin: 1rem;
@@ -500,7 +500,6 @@ background-position: center;
      scroll-snap-coordinate: 0% 100%;
    }
 
- /*border just to see center of view*/
    .test2 {
      border-style: solid;
      border-color: black;
@@ -517,8 +516,6 @@ background-position: center;
 
    /*headline odling*/
    .testwrap2 > h1 {
-     /*border-style: solid;
-     border-color: red;*/
      height: 2.68rem;
      width: auto;
      margin-top: 13.385%;
@@ -534,16 +531,32 @@ background-position: center;
      color: #FFFFFF;
    }
 
-   /*white t-shirt illustration*/
-   .testwrap2 > img {
-     /*border-style: solid;
-     border-color: red;*/
+   /*images*/
+   #cotton {
      display: flex;
      justify-content: center;
      align-items: center;
-     height: 12.562rem;
-     width: 100%;
+     margin: auto;
+     width: auto;
+     height: 30%;
    }
+   #t-shirt {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: auto;
+     width: auto;
+     height: 30%;
+   }
+   #gots-box {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: auto;
+     width: auto;
+     height: 20%;
+   }
+
 
    /*text below t-shirt*/
    .testwrap2 > p {
@@ -585,12 +598,6 @@ background-position: center;
 
   .test3 > p {
     font-size: 1rem;
-  }
-
-  .test3 > img {
-    font-size: 1rem;
-    width: 10vh;
-    height: 20vh;
   }
 
   .test4 {
@@ -793,35 +800,33 @@ background-position: center;
   }
 
   /*section 9 footer*/
-.section_9 {
-  height: 100vh;
-  width: auto;
-  border-style: solid;
-  border-color: blue;
-}
+  .section_9 {
+    width: 100vw;
+    height: 100vh;
+  }
 
-.section_9 > h2 {
-height: 13.5rem;
-width: 16.437rem;
-margin: 9rem 2.5rem;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-color: #66BF97;
-font-family: 'Parabola';
-font-size: 4.937rem;
-line-height: 5.25rem;
-text-align: center;
-font-weight: normal;
-}
-
-#toWebshop {
+  .section_9 > h2 {
+  height: 13.5rem;
+  width: 14.75rem;
+  margin: 9rem 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+  color: #66BF97;
+  font-family: 'Parabola';
+  font-size: 4.937rem;
+  line-height: 5.25rem;
+  text-align: center;
+  font-weight: normal;
+  }
+
+  #toWebshop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   /*section 10 footer*/
   .section_10 {
@@ -832,16 +837,19 @@ font-weight: normal;
     justify-content: center;
     align-items: center;
     background-color: #1C0E0E;
-    border-style: solid;
-    border-color: blue;
   }
 
+/*section 10 mobile divider*/
   .pageUpper, .pageLower {
     height: 50%;
-    width: 50%;
+    width: 90%;
     margin: 0.5rem;
-    border-style: solid;
-    border-color: red;
+    /*border-style: solid;
+    border-color: red;*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
   }
 
 #shopLocation a {
@@ -849,40 +857,35 @@ font-weight: normal;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 3rem;
 
 }
   .pageUpper > img {
-    width: 45%;
-    position: absolute;
-    border-style: solid;
-    border-color: yellow;
-  }
-
-  /*.pageUpper > img {
-    width: 100%;
+    max-width: 75%;
+    height: auto;
     display: flex;
+    justify-content: center;
     align-items: center;
-    align-content: center;
     position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-  }*/
+  }
 
   .pageLower > p {
     font-size: 1rem;
     font-family: 'futura_medium';
     color: #FFFFFF;
-    border-style: solid;
-    border-color: yellow;
+    width: 16.437rem;
+    padding-top: 2rem;
+    line-height: 1.5rem;
   }
 
   .pageLower > h3 {
-    font-size: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
     font-family: 'futura_medium';
     color: #FFFFFF;
-    border-style: solid;
-    border-color: yellow;
+    width: 16.437rem;
+    padding-top: 2.5rem;
+    line-height: 1.5rem;
   }
   .greentext {
     color: #66BF97;
