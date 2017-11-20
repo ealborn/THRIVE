@@ -745,25 +745,45 @@ background-position: center;
     height: 50vh;
     background-color: tomato;
   }
-
   /*section 9 footer*/
-  .section_9 {
+
+
+  /*section 10 footer*/
+  .section_10 {
     height: 100vh;
-    width: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #1C0E0E;
+    border-style: solid;
+    border-color: blue;
   }
+
   .pageUpper, .pageLower {
     height: 50%;
-    width: 100vh;
+    width: 50%;
     margin: 0.5rem;
-    /*border-style: solid;
-    border-color: red;*/
+    border-style: solid;
+    border-color: red;
   }
-  .pageUpper > iframe {
-    width: 100vh;
-    position: absolute;
-  }
+
+#shopLocation a{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
   .pageUpper > img {
+    width: 45%;
+    position: absolute;
+    border-style: solid;
+    border-color: yellow;
+  }
+
+  /*.pageUpper > img {
     width: 100%;
     display: flex;
     align-items: center;
@@ -772,14 +792,23 @@ background-position: center;
     left: 0px;
     top: 0px;
     z-index: -1;
-  }
+  }*/
+
   .pageLower > p {
-    width: 100vh;
-    height: 100%;
-    margin: 1rem;
-    padding: 1rem;
     font-size: 1rem;
-    font-family: futura_medium;
+    font-family: 'futura_medium';
     color: #FFFFFF;
-    line-height: 24px;
+    border-style: solid;
+    border-color: yellow;
+  }
+
+  .pageLower > h3 {
+    font-size: 2rem;
+    font-family: 'futura_medium';
+    color: #FFFFFF;
+    border-style: solid;
+    border-color: yellow;
+  }
+  .greentext {
+    color: #66BF97;
   }
