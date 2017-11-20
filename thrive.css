@@ -140,7 +140,7 @@ h6 {
 }
 
 .ingress {
-  font-family: Parabola;
+  font-family: 'Parabola';
   text-align: left;
   font-weight: lighter;
   font-size: 2.6em;
@@ -153,7 +153,6 @@ h6 {
 
 .green {
   color: #76C8A8;
-
 }
 
 .bottommobile1 {
@@ -176,8 +175,6 @@ h6 {
   margin-bottom: 47px;
 
 }
-
-
 /*Section 2 follows*/
 
 .section_2 {
@@ -185,8 +182,6 @@ h6 {
   width: 100vw;
   background-color: white;
 }
-
-
 
 .section_2_ingress_wrap {
   padding-top: 10vh;
@@ -533,7 +528,9 @@ background-position: center;
      display: flex;
      justify-content: center;
      align-items: center;
-     font-family: 'parabola';
+     font-family: 'Parabola';
+     font-weight: normal;
+     text-align: center;
      color: #FFFFFF;
    }
 
@@ -569,12 +566,61 @@ background-position: center;
   .test3 {
     width: 100vw;
     height: 100vh;
+    padding: 3.5rem;
     background-color: #76C8A8;
     min-width: 100vw;
     transition: all 1s ease;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #FFFFFF;
+  }
+
+  .test3 > h1, .test4 > h1 {
+    font-size: 3rem;
+    padding: 1rem;
+    font-weight: normal;
+  }
+
+  .test3 > p {
+    font-size: 1rem;
+  }
+
+  .test3 > img {
+    font-size: 1rem;
+    width: 10vh;
+    height: 20vh;
+  }
+
+  .test4 {
+    width: 100vw;
+    height: 100vh;
+    padding: 3.5rem;
+    background-color: #76C8A8;
+    min-width: 100vw;
+    transition: all 1s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .test4 > p {
+    width: 100%;
+    margin-top: 8.5%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .test4 > img {
+    width: 20vh;
+    height: auto;
   }
 
   .test3_clicked {
@@ -745,8 +791,37 @@ background-position: center;
     height: 50vh;
     background-color: tomato;
   }
-  /*section 9 footer*/
 
+  /*section 9 footer*/
+.section_9 {
+  height: 100vh;
+  width: auto;
+  border-style: solid;
+  border-color: blue;
+}
+
+.section_9 > h2 {
+height: 13.5rem;
+width: 16.437rem;
+margin: 9rem 2.5rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: #66BF97;
+font-family: 'Parabola';
+font-size: 4.937rem;
+line-height: 5.25rem;
+text-align: center;
+font-weight: normal;
+}
+
+#toWebshop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
   /*section 10 footer*/
   .section_10 {
@@ -769,7 +844,7 @@ background-position: center;
     border-color: red;
   }
 
-#shopLocation a{
+#shopLocation a {
   width: 100%;
   display: flex;
   justify-content: center;
