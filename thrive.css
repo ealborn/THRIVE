@@ -442,166 +442,237 @@ background-position: center;
 
 
 
- /*Section 5 and first slideshow follows*/
+/*Section 5 and first slideshow follows*/
 
- .section_5 {
-   width: 100vw;
-   height: 100vh;
-   background-color: grey;
-   display: flex;
-   flex-flow: row nowrap;
-   position: relative;
- }
+.section_5 {
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+}
 
-   .test1 {
-     width: 100vh;
-     height: 100vh;
-     background-color: #76C8A8;
-     min-width: 100vw;
-     transition: all 1s ease;
-     display: flex;
-     align-items: center;
-     flex-direction: column;
+   /*slide1*/
+  .test1 {
+    width: 100vh;
+    height: 100vh;
+    background-color: #76C8A8;
+    min-width: 100vw;
+    transition: all 1s ease;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .blackline {
+    position: absolute;
+    left: -2rem;
+    top: 3rem;
+   width: 5rem;
+   height: 0.125rem;
+   background-color: red;
 
-
-   }
-   .blackline {
-
-   }
-   /*slide page wrapper*/
-   .testwrap1, .testwrap2{
-     width: 21.5rem;
-     height: 39.786rem;
-     margin: 1rem;
-     padding: 2.5rem;
-   }
-   .testwrap1 > h2 {
-     padding-top: 21%;
-     padding-bottom: 10.84%;
-     font-size: 1.5rem;
-     /*text-indent: 2rem;*/
-     font-family: 'futura_bold';
-     color: #FFFFFF;
-   }
-    .testwrap1 > p {
-     font-size: 1rem;
-     font-family: 'futura_medium';
-     color: #FFFFFF;
-     padding-bottom: 10.84%;
-   }
-   .swipebutton {
-     border-style: solid;
-     border-color: red;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     padding: 1rem;
-     width: 100%;
-     height: auto;
-   }
-
-   .scrollsnap {
-     scroll-snap-coordinate: 0% 100%;
-   }
-
- /*border just to see center of view*/
-   .test2 {
-     border-style: solid;
-     border-color: black;
-     height: 100%;
-     width: auto;
-     background-color: #76C8A8;
-     min-width: 100vw;
-     transition: all 1s ease;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
-   }
-
-   /*headline odling*/
-   .testwrap2 > h1 {
-     /*border-style: solid;
-     border-color: red;*/
-     height: 2.68rem;
-     width: auto;
-     margin-top: 13.385%;
-     margin-bottom: 6.771%;
-     padding: 1vh;
-     font-size: 3rem;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     font-family: 'parabola';
-     color: #FFFFFF;
-   }
-
-   /*white t-shirt illustration*/
-   .testwrap2 > img {
-     /*border-style: solid;
-     border-color: red;*/
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     height: 12.562rem;
-     width: 100%;
-   }
-
-   /*text below t-shirt*/
-   .testwrap2 > p {
-     /*border-style: solid;
-     border-color: red;*/
-     width: 100%;
-     margin-top:8.5%;
-     font-size: 1rem;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     font-family: 'futura_medium';
-     color: #FFFFFF;
-   }
-
-  .test2_clicked {
-    margin-left: 100vw;
+  }
+  /*slide page wrappers*/
+  .testwrap1, .testwrap2 {
+    width: 21.5rem;
+    height: 39.786rem;
+    margin: 1rem;
+    padding: 2.5rem;
+  }
+  .testwrap1 > h2 {
+    padding-top: 21%;
+    padding-bottom: 10.84%;
+    font-size: 1.5rem;
+    /*text-indent: 2rem;*/
+    text-align: center;
+    font-family: 'futura_bold';
+    color: #FFFFFF;
+  }
+   .testwrap1 > p {
+    font-size: 1rem;
+    font-family: 'futura_medium';
+    color: #FFFFFF;
+    padding-bottom: 10.84%;
+  }
+  .swipebutton {
+    border-style: solid;
+    border-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
   }
 
-  .test3 {
-    width: 100vw;
-    height: 100vh;
+  .scrollsnap {
+    scroll-snap-coordinate: 0% 100%;
+  }
+
+   /*slide 2*/
+  .test2 {
+    border-style: solid;
+    border-color: black;
+    height: 100%;
+    width: auto;
     background-color: #76C8A8;
     min-width: 100vw;
     transition: all 1s ease;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
 
-  .test3_clicked {
-
-  }
-
-  .navigation {
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
+  /*headline odling*/
+  .testwrap2 > h1 {
+    height: 2.68rem;
+    width: auto;
+    margin-top: 13.385%;
+    margin-bottom: 6.771%;
+    padding: 1vh;
+    font-size: 3rem;
     display: flex;
     justify-content: center;
-    height: 67px;
-    background-color: #1C0E0E;
-    overflow: scroll;
-    color: white;
+    align-items: center;
+    font-family: 'Parabola';
+    font-weight: normal;
+    text-align: center;
+    color: #FFFFFF;
   }
 
-  .navigationwrap {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    flex-flow: row nowrap;
+  /*images*/
+  #cotton {
     display: flex;
-    overflow: scroll;
-    scroll-behavior: auto;
-
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: auto;
+    height: 30%;
   }
+  #t-shirt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: auto;
+    height: 30%;
+  }
+  #gots-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: auto;
+    height: 20%;
+  }
+
+
+  /*text below cotton flower*/
+  .testwrap2 > p {
+    /*border-style: solid;
+    border-color: red;*/
+    width: 100%;
+    margin-top:8.5%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'futura_medium';
+    color: #FFFFFF;
+  }
+
+ .test2_clicked {
+   margin-left: 100vw;
+ }
+
+ /*slide 3*/
+ .test3 {
+   width: 100vw;
+   height: 100vh;
+   padding: 3.5rem;
+   background-color: #76C8A8;
+   min-width: 100vw;
+   transition: all 1s ease;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: #FFFFFF;
+ }
+
+ /*headlines slide 3 and slide 4*/
+ .test3 > h1, .test4 > h1 {
+   font-size: 3rem;
+   padding: 1rem;
+   font-weight: normal;
+ }
+
+ /*text producering*/
+ .test3 > p {
+   font-size: 1rem;
+ }
+
+ /*slide 4*/
+ .test4 {
+   width: 100vw;
+   height: 100vh;
+   padding: 3.5rem;
+   background-color: #76C8A8;
+   min-width: 100vw;
+   transition: all 1s ease;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: #FFFFFF;
+   border-style: solid;
+   border-color: black;
+ }
+
+ /*text frakt */
+ .test4 > p {
+   width: 100%;
+   margin-top: 8.5%;
+   font-size: 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .test4 > img {
+   width: 20vh;
+   height: auto;
+ }
+
+ .test3_clicked {
+   margin-left: 100vw;
+ }
+
+ .navigation {
+   position: absolute;
+   bottom: 0;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   height: 67px;
+   background-color: #1C0E0E;
+   overflow: scroll;
+   color: white;
+ }
+
+ .navigationwrap {
+   width: 100vw;
+   height: 100vh;
+   overflow: hidden;
+   flex-flow: row nowrap;
+   display: flex;
+   overflow: scroll;
+   scroll-behavior: auto;
+
+ }
+
   /*Section 6 will be under this */
 
   .section_6 {
@@ -907,27 +978,94 @@ background-position: center;
 /*SECTION 8 - FOOTER GOES HERE */
 
 .section_9 {
+  width: 100vw;
   height: 100vh;
-  width: 100vh;
+}
+
+/*text handla rättvist*/
+.section_9 > h2 {
+height: 13.5rem;
+width: 100%;
+margin: 9rem 2.5rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: #66BF97;
+font-family: 'Parabola';
+font-size: 4.937rem;
+line-height: 5.25rem;
+text-align: center;
+font-weight: normal;
+}
+
+/*button till webbutiken*/
+#toWebshop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*section 10 black map footer mobile page*/
+.section_10 {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #1C0E0E;
 }
+
+/*section 10 mobile divider*/
 .pageUpper, .pageLower {
   height: 50%;
-  width: 100vh;
+  width: 90%;
   margin: 0.5rem;
   /*border-style: solid;
   border-color: red;*/
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
 }
-.pageUpper > iframe {
-  width: 100vh;
+
+#shopLocation a {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 3rem;
+
 }
+.pageUpper > img {
+  max-width: 75%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
 .pageLower > p {
-  width: 100vh;
-  height: 100%;
-  margin: 1rem;
-  padding: 1rem;
   font-size: 1rem;
-  font-family: futura_medium;
+  font-family: 'futura_medium';
   color: #FFFFFF;
-  line-height: 24px;
+  width: 16.437rem;
+  padding-top: 2rem;
+  line-height: 1.5rem;
+}
+
+.pageLower > h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'futura_medium';
+  color: #FFFFFF;
+  width: 16.437rem;
+  padding-top: 2.5rem;
+  line-height: 1.5rem;
+}
+.greentext {
+  color: #66BF97;
 }
