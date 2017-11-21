@@ -263,6 +263,8 @@ let stopMe = false;
 //
 //
 // });
+
+//INFOGRAPHICS BUTTONS
 let infoRight = document.getElementById('info-btn_right');
 $('#info-btn_right, #info-btn_left').click(function() {
 
@@ -275,6 +277,23 @@ $('#info-btn_right, #info-btn_left').click(function() {
 
   } else if ($(this).is("#info-btn_left")) {
     infoSlideWidth.scrollBy(-widthValue, 0);
+  }
+
+  });
+
+  //GOTS BUTTONS
+
+$('#gots-btn_right, #gots-btn_left').click(function() {
+
+  let secSix = document.querySelector('.section_6');
+  let gotsSlideWidth = document.querySelector('.navigationwrap');
+  let widthValue = window.innerWidth;
+
+  if ($(this).is("#gots-btn_right")) {
+    gotsSlideWidth.scrollBy(widthValue, 0);
+
+  } else if ($(this).is("#gots-btn_left")) {
+    gotsSlideWidth.scrollBy(-widthValue, 0);
   }
 
   // infoSlideWidth.scroll({top: 0, left: widthValue, behavior: 'smooth'});
@@ -300,6 +319,7 @@ $('#info-btn_right, #info-btn_left').click(function() {
   // }
 
 });
+
   // $('.once').click(function() {
   //
   //

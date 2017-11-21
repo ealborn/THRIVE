@@ -518,9 +518,7 @@ background-position: center;
     height: auto;
   }
 
-  .scrollsnap {
-    scroll-snap-coordinate: 0% 100%;
-  }
+
 
    /*slide 2*/
   .test2 {
@@ -595,9 +593,6 @@ background-position: center;
     color: #FFFFFF;
   }
 
- .test2_clicked {
-   margin-left: 100vw;
- }
 
  /*slide 3*/
  .test3 {
@@ -662,7 +657,7 @@ background-position: center;
    margin-left: 100vw;
  }
 
- .navigation {
+ .navigationbar {
    position: absolute;
    bottom: 0;
    width: 100vw;
@@ -675,13 +670,13 @@ background-position: center;
  }
 
  .navigationwrap {
-   width: 100vw;
+   width: 300vw;
    height: 100vh;
    overflow: hidden;
    flex-flow: row nowrap;
    display: flex;
    overflow: scroll;
-   scroll-behavior: auto;
+
 
  }
 
