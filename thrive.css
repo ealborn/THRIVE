@@ -31,11 +31,11 @@ body {
   font-family: 'futura_light';
   src: url('Fonts/futura_light.ttf');
 }
+
 @font-face {
    font-family: 'futura_medium';
    src: url('Fonts/futura_medium.ttf');
 }
-
 @font-face {
    font-family: 'futura_bold';
    src: url('Fonts/futura_bold.ttf');
