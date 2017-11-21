@@ -452,6 +452,18 @@ background-position: center;
   flex-flow: row nowrap;
   position: relative;
 }
+.gots_buttons_wrap {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 4rem 0 4rem;
+  z-index: 10;
+  overflow: scroll;
+  padding-bottom: 8rem;
+}
 
    /*slide1*/
   .test1 {
@@ -981,13 +993,16 @@ background-position: center;
 .section_9 {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*text handla rättvist*/
 .section_9 > h2 {
-height: 13.5rem;
+  max-width: 60%;
 width: 100%;
-margin: 9rem 2.5rem;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -995,9 +1010,10 @@ align-items: center;
 color: #66BF97;
 font-family: 'Parabola';
 font-size: 4.937rem;
-line-height: 5.25rem;
+line-height: 4.5rem;
 text-align: center;
 font-weight: normal;
+margin-bottom: 2rem;
 }
 
 /*button till webbutiken*/
