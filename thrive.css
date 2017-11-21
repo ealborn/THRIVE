@@ -807,7 +807,7 @@ background-position: center;
 
   .section_9 > h2 {
   height: 13.5rem;
-  width: 14.75rem;
+  width: 100%;
   margin: 9rem 2.5rem;
   display: flex;
   flex-direction: column;
