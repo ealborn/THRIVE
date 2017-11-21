@@ -444,6 +444,7 @@ background-position: center;
    position: relative;
  }
 
+    /*slide1*/
    .test1 {
      width: 100vh;
      height: 100vh;
@@ -463,7 +464,7 @@ background-position: center;
     background-color: red;
 
    }
-   /*slide page wrapper*/
+   /*slide page wrappers*/
    .testwrap1, .testwrap2 {
      width: 21.5rem;
      height: 39.786rem;
@@ -500,6 +501,7 @@ background-position: center;
      scroll-snap-coordinate: 0% 100%;
    }
 
+    /*slide 2*/
    .test2 {
      border-style: solid;
      border-color: black;
@@ -558,7 +560,7 @@ background-position: center;
    }
 
 
-   /*text below t-shirt*/
+   /*text below cotton flower*/
    .testwrap2 > p {
      /*border-style: solid;
      border-color: red;*/
@@ -576,6 +578,7 @@ background-position: center;
     margin-left: 100vw;
   }
 
+  /*slide 3*/
   .test3 {
     width: 100vw;
     height: 100vh;
@@ -590,16 +593,19 @@ background-position: center;
     color: #FFFFFF;
   }
 
+  /*headlines slide 3 and slide 4*/
   .test3 > h1, .test4 > h1 {
     font-size: 3rem;
     padding: 1rem;
     font-weight: normal;
   }
 
+  /*text producering*/
   .test3 > p {
     font-size: 1rem;
   }
 
+  /*slide 4*/
   .test4 {
     width: 100vw;
     height: 100vh;
@@ -616,6 +622,7 @@ background-position: center;
     border-color: black;
   }
 
+  /*text frakt */
   .test4 > p {
     width: 100%;
     margin-top: 8.5%;
@@ -631,7 +638,7 @@ background-position: center;
   }
 
   .test3_clicked {
-
+    margin-left: 100vw;
   }
 
   .navigation {
@@ -799,12 +806,13 @@ background-position: center;
     background-color: tomato;
   }
 
-  /*section 9 footer*/
+  /*section 9, footer part 1 mobile*/
   .section_9 {
     width: 100vw;
     height: 100vh;
   }
 
+/*text handla rättvist*/
   .section_9 > h2 {
   height: 13.5rem;
   width: 100%;
@@ -821,6 +829,7 @@ background-position: center;
   font-weight: normal;
   }
 
+  /*button till webbutiken*/
   #toWebshop {
     display: flex;
     flex-direction: column;
@@ -828,7 +837,7 @@ background-position: center;
     align-items: center;
   }
 
-  /*section 10 footer*/
+  /*section 10 black map footer mobile page*/
   .section_10 {
     height: 100vh;
     width: auto;
