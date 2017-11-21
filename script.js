@@ -160,7 +160,7 @@
 
   });
 
-
+let stopMe = false;
 
   window.addEventListener("scroll",function() {
     let frameContainer = document.getElementsByClassName('.framebox').innerHTML;
@@ -219,20 +219,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-    });
-
     //--------------Percentage Counter ----------//
         function animatePercentage(id, start, end, duration) {
-
 
             let range = end - start;
             let current = start;
@@ -242,19 +230,27 @@
             let timer = setInterval(function() {
                 current += increment;
                 percentage.innerHTML = current + '%';
-                if (current == end) {
-                    clearInterval(timer);
-                }
+              if (current == end) {
+                console.log('hej');
+                  clearInterval(timer);
+              }
             }, stepTime);
         }
 
+        let pieChart = document.querySelector('circle');
+        if (secSix <= 40 && stopMe == false) {
+          pieChart.classList.add('circletrig');
+          animatePercentage("value", 0, 98, 1300);
+          stopMe = true;
+          console.log('stopMe');
+        }
 
-    animatePercentage("value", 0, 98, 1300);
-
-    let pieChart = document.querySelector('circle');
+    });
 
 
-      pieChart.classList.add('circletrig');
+
+
+
 
 
         //--------------INFOGRAPHICS SLIDER ----------//
