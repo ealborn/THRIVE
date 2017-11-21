@@ -673,6 +673,7 @@ background-position: center;
 
  }
 
+
   /*Section 6 will be under this */
 
   .section_6 {
@@ -1007,6 +1008,7 @@ font-weight: normal;
   align-items: center;
 }
 
+
 /*section 10 black map footer mobile page*/
 .section_10 {
   height: 100vh;
@@ -1039,7 +1041,11 @@ align-items: center;
 margin-top: 3rem;
 
 }
-.pageUpper > img {
+
+/*map image*/
+.pageUpper > .map {
+
+
   max-width: 75%;
   height: auto;
   display: flex;
