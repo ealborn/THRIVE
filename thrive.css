@@ -989,13 +989,16 @@ margin-bottom: 2rem;
 .pageUpper, .pageLower {
   height: 50%;
   width: 90%;
-  margin: 0.5rem;
+  margin: 0;
   /*border-style: solid;
   border-color: red;*/
   display: flex;
+  text-align: center;
   align-items: center;
   flex-direction: column;
-
+}
+.pageUpper {
+  overflow: hidden;
 }
 
 #shopLocation a {
@@ -1009,14 +1012,14 @@ margin-top: 3rem;
 
 /*map image*/
 .pageUpper > .map {
-
-
-  max-width: 75%;
+  width:auto;
+  max-width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
+  transform:translateY(-20%);
 }
 
 .pageLower > p {
