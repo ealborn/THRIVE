@@ -948,7 +948,7 @@ background-position: center;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: #FFFFFF; 
+  background-color: #FFFFFF;
 }
 
 /*text handla rättvist*/
@@ -989,7 +989,7 @@ margin-bottom: 2rem;
 /*section 10 mobile divider*/
 .pageUpper, .pageLower {
   height: 50%;
-  width: 90%;
+  width: 100%;
   margin: 0;
   /*border-style: solid;
   border-color: red;*/
@@ -1008,18 +1008,22 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin-top: 3rem;
-
+}
+#shopLocation{
+  z-index: 1;
+  position: absolute;
 }
 
 /*map image*/
 .pageUpper > .map {
-  width:auto;
-  max-width: 100%;
-  height: auto;
+  height: 100vh;
+  max-height: 100%;
+  width: 100%;
+  /*max-width: 100%;*/
   display: flex;
   justify-content: center;
   align-items: center;
-  transform:translateY(-20%);
+  /*transform:translateY(-10%);*/
   overflow-x: hidden;
 }
 
