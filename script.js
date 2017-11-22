@@ -27,32 +27,6 @@
 
   //The following is under development script for the slideshow
 
-  $('.test1knapp').click(function() {
-
-    $(".test2")[0].scrollIntoView({
-      behavior: "smooth", // or "auto" or "instant"
-      block: "start" // or "end"
-    });
-
-    $('.test2knapp').click(function() {
-
-      $(".test3")[0].scrollIntoView({
-        behavior: "smooth", // or "auto" or "instant"
-        block: "start" // or "end"
-      });
-    });
-
-    $('.test3knapp').click(function() {
-
-      $(".test1")[0].scrollIntoView({
-        behavior: "smooth", // or "auto" or "instant"
-        block: "start" // or "end"
-      });
-    });
-
-  });
-
-
 
   // Symbols page
 
@@ -146,32 +120,31 @@
     webbDash.classList.add('webbdash_show');
     mobileDash.classList.add('textdash_show');
 
-
-      //CHANGE COLOR OF FRAME LOGOS----------------------!
-
-
-
-
-
-
-
-
-
-
   });
 
-let stopMe = false;
+  //CHANGE COLOR OF FRAME LOGOS----------------------!
 
+
+
+
+
+
+
+let stopMe = false;
   window.addEventListener("scroll",function() {
     let frameContainer = document.getElementsByClassName('.framebox').innerHTML;
     let createFrame = document.createElement('div');
 
+
     let secOne = document.querySelector('.section_1').getBoundingClientRect().y;
     let secTwo = document.querySelector('.section_2').getBoundingClientRect().y;
     let secThree = document.querySelector('.section_3').getBoundingClientRect().y;
+    let secFour = document.querySelector('.section_4').getBoundingClientRect().y;
     let secFive = document.querySelector('.section_5').getBoundingClientRect().y;
     let secSix = document.querySelector('.section_6').getBoundingClientRect().y;
     let secSeven = document.querySelector('.section_7').getBoundingClientRect().y;
+    let secNine = document.querySelector('.section_9').getBoundingClientRect().y;
+    let secTen = document.querySelector('.section_10').getBoundingClientRect().y;
 
     let frameLogo = document.querySelectorAll('.logotext');
     let frameDash = document.querySelectorAll('.logodash');
@@ -183,43 +156,51 @@ let stopMe = false;
         }
          if (secTwo <= 20) {
         frameLogo.style.color = "black";
-        }
-        if (secThree <= 5) {
-        frameLogo.style.color = "white";
-      }
-        if (secFive <= 20) {
-        frameLogo.style.color = "white";
-      }
-        if (secSix <= 30 ) {
-        frameLogo.style.color = "white";
 
+        }
+        if (secThree <= 20) {
+        frameLogo.style.color = "white";
+        }
+        if (secFour <= 5) {
+        frameLogo.style.color = "white";
+        }
+        if (secFive <= 20) {
+        document.querySelector('.logobottom').style.opacity = "1";
+        frameLogo.style.color = "white";
+        for (frames of frameDash) {
+          frames.style.backgroundColor = "white";
+        }
       }
         if (secSix <= 40 && window.innerWidth <= 400 ) {
         frameLogo.style.color = "white";
         document.querySelector('.logobottom').style.opacity = "0";
       }
-        if (secSeven <= 40) {
+        if (secSeven <= 40 && window.innerWidth <= 400 ) {
         frameLogo.style.color = "black";
+        document.querySelector('.logobottom').style.opacity = "1";
+      } else if (secSeven <= 40){
+        frameLogo.style.color = "black";
+
+      }
+        if (secNine <= 40) {
+        frameLogo.style.color = "black";
+        document.querySelector('.logobottom').style.opacity = "1";
+        for (frames of frameDash) {
+          frames.style.backgroundColor = "black";
+        }
+      }
+        if (secTen <= 20 ) {
+        frameLogo.style.color = "white";
+        document.querySelector('.logobottom').style.opacity = "1";
+        for (frames of frameDash) {
+          frames.style.backgroundColor = "white";
+        }
       }
 
+    }
+      // INFOGRAPHICS ANIMATIONS //
 
-      }
-
-
-
-
-
-
-
-    // secSix.addEventListener("scroll", () => {
-    //
-    //             let xPos = $('.slide_one').offset().left;
-    //             console.log(xPos);
-    //         });
-
-
-
-    //--------------Percentage Counter ----------//
+    //--------------Percentage Counter for piechart ----------//
         function animatePercentage(id, start, end, duration) {
 
             let range = end - start;
@@ -229,7 +210,8 @@ let stopMe = false;
             let obj = document.getElementById('percentage');
             let timer = setInterval(function() {
                 current += increment;
-                percentage.innerHTML = current + '%';
+
+                obj.innerHTML = current + '%';
               if (current == end) {
                 console.log('hej');
                   clearInterval(timer);
@@ -245,24 +227,44 @@ let stopMe = false;
           console.log('stopMe');
         }
 
-    });
+      });
+//INFO PAGE 2 animations
+    let infoWrap = document.querySelector('.infographics_wrap');
+        let secSix = document.querySelector('.section_6');
+
+        infoWrap.addEventListener("scroll", () => {
+
+          function animatePercentage(id, start, end, duration) {
+
+              let range = end - start;
+              let current = start;
+              let increment = end > start? 1 : -1;
+              let stepTime = Math.abs(Math.floor(duration / range) * 2);
+              let obj = document.getElementById('tons');
+              let timer = setInterval(function() {
+                  current += increment;
+
+                  obj.innerHTML = current + '.000 TON &nbsp;';
+                if (current == end) {
+                  console.log('hej');
+                    clearInterval(timer);
+                }
+              }, stepTime);
+          }
+
+               let infoTwo = $('.infographics_2');
+                let xPosOffset = $('.slide_two').offset();
+                console.log(xPosOffset['left']);
+                if (xPosOffset['left'] == 0  ) {
+                  infoTwo.css("opacity", "1");
+                  animatePercentage("value", 0, 50, 1300);
+                  stopMe = true;
+                }
 
 
+        });
 
 
-
-
-
-        //--------------INFOGRAPHICS SLIDER ----------//
-//         let infoRight = document.getElementById('info-btn_right');
-// let infoButtons = document.querySelectorAll('.infographic_buttons');
-// infoRight.addEventListener("click",function() {
-//   console.log(infoButtons);
-//
-//
-//
-//
-// });
 
 //INFOGRAPHICS BUTTONS
 let infoRight = document.getElementById('info-btn_right');
@@ -296,45 +298,5 @@ $('#gots-btn_right, #gots-btn_left').click(function() {
     gotsSlideWidth.scrollBy(-widthValue, 0);
   }
 
-  // infoSlideWidth.scroll({top: 0, left: widthValue, behavior: 'smooth'});
-
-
-
-
-
-
-  // let infoRight = document.getElementById('info-btn_right');
-  // if (!infoRight.classList.contains('onceright')) {
-  //   $(".slide_two")[0].scrollIntoView({
-  //     behavior: "smooth",
-  //     block: "start"
-  // });
-  //   infoRight.classList.add('onceright');
-  //   console.log(infoRight);
-  // } else {
-  //     $(".slide_three")[0].scrollIntoView({
-  //       behavior: "smooth", // or "auto" or "instant"
-  //       block: "start" // or "end"
-  //   });
-  // }
 
 });
-
-  // $('.once').click(function() {
-  //
-  //
-  //   $(".slide_three")[0].scrollIntoView({
-  //     behavior: "smooth", // or "auto" or "instant"
-  //     block: "start" // or "end"
-  //   });
-  // });
-  //
-  // $('.test3knapp').click(function() {
-  //
-  //   $(".test1")[0].scrollIntoView({
-  //     behavior: "smooth", // or "auto" or "instant"
-  //     block: "start" // or "end"
-  //   });
-  // });
-
-// });

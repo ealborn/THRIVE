@@ -78,8 +78,6 @@ h6 {
   flex-flow: row wrap;
   transition: all .4s ease ;
 
-
-
 }
 
 .logodash {
@@ -87,16 +85,15 @@ h6 {
   height: 0.075rem;
   margin-top: 1rem;
   background-color: #76C883;
-
-    animation: 1s ease-out forwards logoslideLeft;
+  transition: all .3s ease;
+  animation: 1s ease-out forwards logoslideLeft;
 }
 
 .logotext {
   color: white;
   height: 2rem;
-    animation: 1.5s ease-in-out 1 forwards logoslideRight;
-    transition: color 1s ease;
-
+  animation: 1.5s ease-in-out 1 forwards logoslideRight;
+  transition: color .3s ease;
 }
 .logotop {
   top: 0.6rem;
@@ -119,16 +116,16 @@ h6 {
   transform: rotate(-90deg);
   transform-origin: top left;
 }
-
-
+.sections {
+  width: 100vw;
+  height: 100vh;
+}
 .section_1 {
   background-color: #1C0E0E;
   background-image: url(heroimagefull.png);
   background-blend-mode: luminosity;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -189,8 +186,6 @@ h6 {
 /*Section 2 follows*/
 
 .section_2 {
-  height: 100vh;
-  width: 100vw;
   background-color: white;
 }
 
@@ -210,8 +205,6 @@ h6 {
 }
 
 .section_2_text_wrap {
-
-
   width: 100vw;
   background-color: white;
 }
@@ -232,8 +225,6 @@ h6 {
 
 .section_3 {
   background-color: black;
-  height: 100vh;
-  width: 100vw;
   overflow-x: hidden;
   overflow-y: hidden;
   display: flex;
@@ -244,7 +235,6 @@ h6 {
 }
 
 .section_3_background {
-
   opacity: 0.5;
   width: 100vw;
   height: 100vh;
@@ -257,7 +247,6 @@ h6 {
   position: absolute;
   z-index: 0;
   transition: all .1s ease;
-
 }
 
 .mobilknapp {
@@ -294,12 +283,12 @@ z-index: 10;
 }
 
 .section_4, .lookbook_wrap {
-  width: 100vw;
-  height: 100vh;
   background-color: #1C0E0E;
 }
 
 .lookbook_wrap {
+  width: 100vw;
+  height: 100vh;
   position: relative;
   background-color: #1C0E0E;
   display: flex;
@@ -319,9 +308,6 @@ z-index: 10;
   background-blend-mode: luminosity;
 
 }
-
-
-
 
 .lookbook_two {
   width: 115px;
@@ -349,7 +335,6 @@ z-index: 10;
   background-blend-mode: luminosity;
 }
 
-
 .lookbook_four {
   width: 218px;
   height: 146px;
@@ -362,10 +347,7 @@ z-index: 10;
   transition: .1s ease;
   background-position: center;
   background-blend-mode: luminosity;
-
 }
-
-
 
 .lookbook_five {
   width: 176px;
@@ -374,11 +356,9 @@ z-index: 10;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-
   top: 70%;
   left: 50%;
   transition: all .5s ease;
-
   background-blend-mode: luminosity;
 }
 
@@ -445,8 +425,6 @@ background-position: center;
 /*Section 5 and first slideshow follows*/
 
 .section_5 {
-  width: 100vw;
-  height: 100vh;
   background-color: grey;
   display: flex;
   flex-flow: row nowrap;
@@ -663,6 +641,7 @@ background-position: center;
    width: 100vw;
    display: flex;
    justify-content: center;
+   align-items: center;
    height: 67px;
    background-color: #1C0E0E;
    overflow: scroll;
@@ -676,23 +655,18 @@ background-position: center;
    flex-flow: row nowrap;
    display: flex;
    overflow: scroll;
-
-
  }
 
-
+ .navigationtext, .navigationpil {
+  color: #76C8A8;
+  margin-right: 1rem;
+ }
   /*Section 6 will be under this */
 
   .section_6 {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     flex-flow: row nowrap;
-
-
   }
-
-
 
   .infographics_wrap{
     width: 300vw;
@@ -700,10 +674,8 @@ background-position: center;
     display: flex;
     flex-flow: row nowrap;
     overflow: scroll;
-
-
-
   }
+
   .info_buttons_wrap {
     position: absolute;
     width: 100vw;
@@ -752,6 +724,7 @@ background-position: center;
     }
 
     .infographics_ingress {
+      text-align: center;
       font-size: 5em;
       font-weight: 100;
       min-width: 10rem;
@@ -759,6 +732,7 @@ background-position: center;
       color: #76C8A8;
       display: flex;
       justify-content: center;
+      align-items:center;
     }
 
 
@@ -806,8 +780,11 @@ background-position: center;
     max-width: 50rem;
     margin-top: 7rem;
     margin-bottom: 0rem;
+    opacity: 0;
+    transition: all .3s ease 0.2s;
 
   }
+
 
   .slide_three {
     background-image: url(./Infographics_bilder/infographics_bg_3.png);
@@ -839,8 +816,6 @@ background-position: center;
   .section_7{
     display: flex;
     flex-flow: column nowrap;
-
-
   }
   .symbols_wrap_upper {
     width: 100vw;
@@ -854,12 +829,10 @@ background-position: center;
   }
   .symbols_upper {
     width: 70%;
-
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-
   }
 
 .symbols_svg_wrap {
@@ -871,7 +844,6 @@ background-position: center;
   padding-top: 0;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
-
 }
 
 .symboltext {
@@ -883,20 +855,16 @@ background-position: center;
     transition: all .5s ease;
 }
 
-
 .symbols_dash_wrap_webb {
   display: flex;
   justify-content: space-around;
   width: 70%;
   display: none;
-
 }
 
   .symbols_dashes_webb {
-
     width: 0.15rem;
     background-color: black;
-
     transition: all .3s ease-out;
   }
   .symbol {
@@ -944,18 +912,12 @@ background-position: center;
     text-align: center;
     font-size: 2rem;
     padding-bottom: 0.75rem;
-
     top: 2rem;
-
-
   }
 
   .symbols_text_organic {
     transition: opacity .4s ease;
-
   }
-
-
 
   .textdashmobile {
     height: 0.125rem;
@@ -965,14 +927,11 @@ background-position: center;
     margin-right: 3px;
   }
 
-
   .textdash_show {
     height: 0.125rem;
     width: 100%;
     background-color: black;
     transition: all .2s ease-in .4s;
-    /*animation: showDash .5s forwards alternate;*/
-
   }
 
   .dashwrap {
@@ -982,12 +941,9 @@ background-position: center;
     align-items: center;
   }
 
-
 /*SECTION 8 - FOOTER GOES HERE */
 
 .section_9 {
-  width: 100vw;
-  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -1022,8 +978,6 @@ margin-bottom: 2rem;
 
 /*section 10 black map footer mobile page*/
 .section_10 {
-  height: 100vh;
-  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

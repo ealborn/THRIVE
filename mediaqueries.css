@@ -398,12 +398,9 @@
 
   .infographics_text_wrap {
     flex-flow: row nowrap;
-    height: 10rem
-
-
-
-
+    height: 10rem;
   }
+
 
   .infographics_ingress {
     border-right: .1rem solid white;

@@ -161,18 +161,16 @@ min-width: 16rem;
   100% { stroke-dashoffset: 10; }
 }
 
-
-  circle {
-
-    fill: transparent;
-    stroke: #76C8A8;
-    stroke-width: 200px;
-    stroke-dasharray: 628;
-    stroke-dashoffset: 628;
-    transform: rotate(-90deg);
-    transform-origin: 50% 50%;
+circle {
+  fill: transparent;
+  stroke: #76C8A8;
+  stroke-width: 200px;
+  stroke-dasharray: 628;
+  stroke-dashoffset: 628;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
   }
+
   .circletrig {
     animation: clock-animation 3s ease-out forwards  ;
-
   }
