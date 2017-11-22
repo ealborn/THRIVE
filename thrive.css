@@ -614,7 +614,7 @@ background-position: center;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   color: #FFFFFF;
+   color:
    border-style: solid;
    border-color: black;
  }
@@ -952,11 +952,12 @@ background-position: center;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background-color: #FFFFFF;
 }
 
 /*text handla rättvist*/
 .section_9 > h2 {
-  max-width: 60%;
+max-width: 60%;
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -992,7 +993,7 @@ margin-bottom: 2rem;
 /*section 10 mobile divider*/
 .pageUpper, .pageLower {
   height: 50%;
-  width: 90%;
+  width: 100%;
   margin: 0;
   /*border-style: solid;
   border-color: red;*/
@@ -1011,19 +1012,23 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin-top: 3rem;
-
+}
+#shopLocation{
+  z-index: 1;
+  position: absolute;
 }
 
 /*map image*/
 .pageUpper > .map {
-  width:auto;
-  max-width: 100%;
-  height: auto;
+  height: 100vh;
+  max-height: 100%;
+  width: 100%;
+  /*max-width: 100%;*/
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  transform:translateY(-20%);
+  /*transform:translateY(-10%);*/
+  overflow-x: hidden;
 }
 
 .pageLower > p {
