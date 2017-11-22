@@ -692,10 +692,10 @@ background-position: center;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0 4rem 0 4rem;
+    padding: 0 4rem 2rem 4rem;
     z-index: 10;
     overflow: scroll;
-    padding-bottom: 1.25rem;
+
   }
   .infographic_buttons {
   cursor: pointer;
@@ -708,7 +708,10 @@ background-position: center;
     align-items: center;
     height: 30vh;
 
+  }
 
+  .infographics_text_wrap {
+    margin-bottom: 0rem;
   }
   .infographics_wrap_inner {
     height: 100vh;
@@ -723,12 +726,14 @@ background-position: center;
     height: 100vh;
     width: 100vw;
     min-width: 100vw;
+    padding-bottom: 8rem;
   }
 
     .infographics_1 {
-      height: 40vh;
+      height:40vh;
       width: 40vh;
-      margin-top: 8rem;
+      margin-top: 12rem;
+
 
     }
 
@@ -749,7 +754,7 @@ background-position: center;
       display: flex;
       align-items: center;
       justify-content: center;
-      max-width: 15rem;
+      max-width: 17rem;
       color: white;
       font-size: 12px;
       text-align: center;
@@ -764,7 +769,8 @@ background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 40% 50%;
-    padding-bottom: 5rem
+    margin-bottom: 3rem;
+
   }
 
 
@@ -775,7 +781,7 @@ background-position: center;
     align-items: center;
     flex-flow: column nowrap;
     padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
   }
 
   .infographics_2 {
@@ -784,15 +790,25 @@ background-position: center;
     background-size: contain;
     background-position: center;
     width: 90vw;
-    height: 32vh;
+    height: 30vh;
     max-height: 40rem;
     max-width: 50rem;
-    margin-top: 7rem;
+    margin-top: 8rem;
     margin-bottom: 0rem;
     opacity: 0;
     transition: all .3s ease 0.2s;
 
   }
+
+  #tonswrap {
+
+    height: 8rem;
+  }
+   #tons {
+     margin-bottom: 0.5rem;
+     padding-left: 1rem;
+   }
+
 
 
   .slide_three {
@@ -801,8 +817,8 @@ background-position: center;
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
-    padding-top: 6rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4.5rem;
+
     background-position: left;
   }
 
@@ -810,15 +826,18 @@ background-position: center;
     background-image: url(infographics_bilder/infographics-3.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: bottom;
     width: 90vw;
     height: 35vh;
     max-height: 40rem;
     max-width: 50rem;
-    margin-top: 0rem;
+    margin-top: 8rem;
     margin-bottom: 0rem;
   }
-
+  #textwrapthree {
+    height: auto;
+    margin-bottom: 2rem;
+}
   /*// Section 7 - symbols*/
 
 
@@ -856,9 +875,10 @@ background-position: center;
 }
 
 .symboltext {
+  font-family: 'futura_bold';
   padding-top: 0.5rem;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: lighter;
     letter-spacing: 3px;
     text-align: center;
     transition: all .5s ease;
@@ -891,7 +911,6 @@ background-position: center;
     fill: #76C8A8;
     transition: fill .2s ease .2s;
     transform: scale(1.05);
-
     opacity: .75;
   }
 
@@ -926,6 +945,7 @@ background-position: center;
 
   .symbols_text_organic {
     transition: opacity .4s ease;
+
   }
 
   .textdashmobile {

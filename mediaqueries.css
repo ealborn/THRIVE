@@ -448,8 +448,12 @@
     max-height: 40rem;
     max-width: 50rem;
     margin-top: 6rem;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
   }
+  #textwrapthree {
+    height: auto;
+    margin-bottom: 0rem;
+}
 
   /*SYMBOLS WEBB*/
 
