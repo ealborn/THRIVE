@@ -245,7 +245,7 @@ let stopMe = false;
               let timer = setInterval(function() {
                   current += increment;
 
-                  obj.innerHTML = current + '.000 TON &nbsp;';
+                  obj.innerHTML = '&nbsp;' + current + '.000 TON &nbsp;';
                 if (current == end) {
                   console.log('hej');
                     clearInterval(timer);
