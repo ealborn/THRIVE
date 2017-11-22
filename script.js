@@ -169,6 +169,7 @@ let stopMe = false;
         frameLogo.style.color = "white";
         for (frames of frameDash) {
           frames.style.backgroundColor = "white";
+          document.querySelector('.logobottom').style.opacity = "0";
         }
       }
         if (secSix <= 40 && window.innerWidth <= 400 ) {
@@ -283,20 +284,54 @@ $('#info-btn_right, #info-btn_left').click(function() {
 
   });
 
-  //GOTS BUTTONS
+  //GOTS BUTTONS SLIDER
 
-$('#gots-btn_right, #gots-btn_left').click(function() {
-
+$('#gots-btn_swipe').click(function() {
   let secSix = document.querySelector('.section_6');
   let gotsSlideWidth = document.querySelector('.navigationwrap');
   let widthValue = window.innerWidth;
-
-  if ($(this).is("#gots-btn_right")) {
+  if ($(this).is("#gots-btn_swipe")) {
     gotsSlideWidth.scrollBy(widthValue, 0);
-
-  } else if ($(this).is("#gots-btn_left")) {
-    gotsSlideWidth.scrollBy(-widthValue, 0);
   }
+
+
+
+});
+let gotsSlideWidth = document.querySelector('.navigationwrap');
+let navText = $('.navigationtext');
+
+  gotsSlideWidth.addEventListener("scroll", () => {
+let slideOneOffset = document.querySelector('.test1').getBoundingClientRect().x;
+let slideTwoOffset = document.querySelector('.test2').getBoundingClientRect().x;
+let slideThreeOffset = document.querySelector('.test3').getBoundingClientRect().x;
+let slideFourOffset = document.querySelector('.test4').getBoundingClientRect().x;
+  if (slideOneOffset >= 0) {
+    $('.odling').css("color", "#76C8A8").css("transform", "scale(1)");
+    $('.produktion').css("color", "#76C8A8").css("transform", "scale(1)");
+    $('.frakt').css("color", "#76C8A8").css("transform", "scale(1)");
+    $('.gots').css("color", "white").css("transform", "scale(1.15)");
+
+  }
+  if (slideTwoOffset <= 0 || slideTwoOffset <= 5) {
+      $('.gots').css("color", "#76C8A8").css("transform", "scale(1)");
+      $('.produktion').css("color", "#76C8A8").css("transform", "scale(1)");
+      $('.frakt').css("color", "#76C8A8").css("transform", "scale(1)");
+      $('.odling').css("color", "white").css("transform", "scale(1.15)");
+  }
+  if (slideThreeOffset <= 40 ) {
+      $('.odling').css("color", "#76C8A8").css("transform", "scale(1)");
+      $('.gots').css("color", "#76C8A8").css("transform", "scale(1)");
+      $('.frakt').css("color", "#76C8A8").css("transform", "scale(1)");
+      $('.produktion').css("color", "white").css("transform", "scale(1.15)");
+  }
+  if (slideFourOffset <= 40 ) {
+      $('.odling').css("color", "#76C8A8").css("transform", "scale(1)");
+      $('.gots').css("color", "#76C8A8").css("transform", "scale(1)");
+      $('.produktion').css("color", "#76C8A8").css("transform", "scale(1)");
+      $('.frakt').css("color", "white").css("transform", "scale(1.15)");
+  }
+
+
 
 
 });

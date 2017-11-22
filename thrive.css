@@ -431,16 +431,19 @@ background-position: center;
   position: relative;
 }
 .gots_buttons_wrap {
-  position: absolute;
+
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-end;
-  padding: 0 4rem 0 4rem;
+  padding: 0 2rem 0 2rem;
   z-index: 10;
   overflow: scroll;
   padding-bottom: 8rem;
+}
+#gots-btn_swipe {
+  width: 16rem;
 }
 
    /*slide1*/
@@ -660,6 +663,7 @@ background-position: center;
  .navigationtext, .navigationpil {
   color: #76C8A8;
   margin-right: 1rem;
+  transition: all .3s ease;
  }
   /*Section 6 will be under this */
 
