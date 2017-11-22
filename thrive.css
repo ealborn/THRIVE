@@ -649,6 +649,7 @@ background-position: center;
    background-color: #1C0E0E;
    overflow: scroll;
    color: white;
+   z-index: 1000;
  }
 
  .navigationwrap {
