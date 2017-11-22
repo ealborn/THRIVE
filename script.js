@@ -152,44 +152,71 @@ let stopMe = false;
       for (frameLogo of frameLogo){
 
         if (secOne <= 5) {
+          document.querySelector('.logobottom').style.opacity = "1";
           frameLogo.style.color = "white";
-        }
-         if (secTwo <= 20) {
-        frameLogo.style.color = "black";
+          for (frames of frameDash) {
+            frames.style.backgroundColor = "#76C8A8";
+          }
 
         }
-        if (secThree <= 20) {
-        frameLogo.style.color = "white";
+         if (secTwo <= 200) {
+           document.querySelector('.logobottom').style.opacity = "1";
+           frameLogo.style.color = "black";
+           for (frames of frameDash) {
+             frames.style.backgroundColor = "black";
+           }
+
+
         }
-        if (secFour <= 5) {
+      //
+      //   if (secThree <= 5) {
+      //     for (frames of frameDash) {
+      //       frames.style.backgroundColor = "black";
+      //     }
+      //   frameLogo.style.color = "black";
+      //   document.querySelector('.logobottom').style.opacity = "1";
+      //   }
+      //
+      //
+        if (secFour <= 150) {
+          for (frames of frameDash) {
+            frames.style.backgroundColor = "white";
+            }
         frameLogo.style.color = "white";
-        }
-        if (secFive <= 20) {
         document.querySelector('.logobottom').style.opacity = "1";
-        frameLogo.style.color = "white";
-        for (frames of frameDash) {
-          frames.style.backgroundColor = "white";
-          document.querySelector('.logobottom').style.opacity = "0";
+
         }
-      }
-        if (secSix <= 40 && window.innerWidth <= 400 ) {
-        frameLogo.style.color = "white";
-        document.querySelector('.logobottom').style.opacity = "0";
-      }
-        if (secSeven <= 40 && window.innerWidth <= 400 ) {
+        // if (secFive <= 20 && window.innerWidth <= 400) {
+        // document.querySelector('.logobottom').style.opacity = "0";
+        // frameLogo.style.color = "white";
+        // for (frames of frameDash) {
+        //   frames.style.backgroundColor = "white";
+        //
+        // }
+      // }
+      // }
+      //   if (secSix <= 40 && window.innerWidth <= 400 ) {
+      //   frameLogo.style.color = "white";
+      //   document.querySelector('.logobottom').style.opacity = "0";
+      // }
+        if (secSeven <= 40) {
+          for (frames of frameDash) {
+            frames.style.backgroundColor = "black";
+
+          }
         frameLogo.style.color = "black";
         document.querySelector('.logobottom').style.opacity = "1";
       } else if (secSeven <= 40){
         frameLogo.style.color = "black";
 
       }
-        if (secNine <= 40) {
-        frameLogo.style.color = "black";
-        document.querySelector('.logobottom').style.opacity = "1";
-        for (frames of frameDash) {
-          frames.style.backgroundColor = "black";
-        }
-      }
+      //   if (secNine <= 40) {
+      //   frameLogo.style.color = "black";
+      //   document.querySelector('.logobottom').style.opacity = "1";
+      //   for (frames of frameDash) {
+      //     frames.style.backgroundColor = "black";
+      //   }
+      // }
         if (secTen <= 20 ) {
         frameLogo.style.color = "white";
         document.querySelector('.logobottom').style.opacity = "1";
