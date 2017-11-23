@@ -13,10 +13,34 @@
     align-content: center;
   }
 
-
 }
 
 @media screen and (min-width: 768px) {
+  /*section 5 frame div for web */
+  .testwrap1, .testwrap2 {
+    width: 60%;
+    margin: 15%;
+    padding-left: 5%;
+  }
+
+  .testwrap2 > h1 {
+    color: red;
+    font-size: 3rem;
+  }
+  .testwrap2 > p {
+    color: red;
+    font-size: 2rem;
+    color: blue;
+  }
+
+  /*GOTS web first page text*/
+.testwrap1 > .gots_text {
+  margin-top: 20%;
+  padding-bottom: 20%;
+  width: 100%;
+  font-size: 2rem;
+}
+
 .lookbook_clicked {
   height: 100vh;
   width: 100vw;
