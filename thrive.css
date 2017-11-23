@@ -495,7 +495,7 @@ display: none;
   .gots_ingress_plus_dash {
     display: flex;
     justify-content: flex-start;
-    top: 6rem;
+    top: 5rem;
     position: absolute;
     display: flex;
     align-self: flex-start;
@@ -540,7 +540,7 @@ display: none;
 
   /*headline odling*/
   .testwrap2 > h1 {
-    margin: 5rem 1rem 0.5rem;
+    margin: 4rem 1rem 1rem;
     width: auto;
     padding: 0;
     font-size: 3rem;
