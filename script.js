@@ -377,17 +377,20 @@ let slideFourOffset = document.querySelector('.test4').getBoundingClientRect().x
 
 // iframe
 
-let pageUpper = document.querySelector('.pageUpper, #shopLocation');
+let pageUpper = document.getElementById('mapbtn');
+let pageUpID = document.getElementById('pageUpID');
 pageUpper.addEventListener("click", () => {
-  pageUpper.style.opacity = "0";
-let iframe = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1280.2062175076567!2d11.959069275677681!3d57.699417852255465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff3696b4ac0dd%3A0xe221bc4cd32ce0a2!2sTHRIVE+-+Conscious+Fashion!5e0!3m2!1sen!2sse!4v1511388690548" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
 
+
+let iframe = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1280.2062175076567!2d11.959069275677681!3d57.699417852255465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff3696b4ac0dd%3A0xe221bc4cd32ce0a2!2sTHRIVE+-+Conscious+Fashion!5e0!3m2!1sen!2sse!4v1511388690548" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>';
+pageUpper.style.opacity = "0";
 setTimeout(function() {
-  pageUpper.style.backgroundImage = "none";
-  pageUpper.innerHTML = iframe;
-  pageUpper.style.opacity = "1";
-  iframe.style.opacity = "0.85"
-}, 500);
+  pageUpID.innerHTML = iframe;
+  pageUpper.style.display = "none";
+  pageUpID.style.opacity = "1";
+}, 400);
+
+
 
 //thrivelogo
 let triangle = document.querySelector('.trianglepath');

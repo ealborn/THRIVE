@@ -1053,6 +1053,7 @@ margin-bottom: 2rem;
   justify-content: center;
   align-items: center;
   background-color: #1C0E0E;
+  position: relative;
 }
 
 /*section 10 mobile divider*/
@@ -1078,26 +1079,28 @@ margin-bottom: 2rem;
 
 /*map image*/
 .pageUpper {
-  opacity: 0.75;
-  transition: opacity .3s ease;;
-  background-image: url(newmap.png);
+  opacity: 1;
+  transition: opacity 1.5s ease, width 1s ease .5s;
+
+  background-color:  #1C0E0E;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 20%;
   height: 50vh;
-  max-height: 100%;
+
   width: 100%;
-  /*max-width: 100%;*/
+
   display: flex;
   justify-content: center;
   align-items: center;
   /*transform:translateY(-10%);*/
   overflow-x: hidden;
 
+
 }
-.pageUpper:hover {
-  opacity: 1;
-}
+
+
+
 
 .pageLower > p {
   font-size: 1rem;
@@ -1124,7 +1127,7 @@ margin-bottom: 2rem;
 
 iframe {
 opacity: 0.85;
-transition: opacity .4s ease;
+transition: opacity .2s ease;
 }
 
 iframe:hover {
@@ -1155,4 +1158,48 @@ opacity: 1;
 
 svg.triangle:hover .trianglepath {
   stroke: white;
+}
+
+#mapbtn {
+  position: absolute;
+  top: 25%;
+  transition: opacity 1s ease, transform .2s ease;
+  cursor: pointer;
+
+}
+
+#pageUpID {
+  opacity: 0;
+  transition: opacity 1s ease .5s;
+
+
+}
+
+
+
+#mapbtn::before {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  content: '';
+  width : calc(100% - 0.5rem);
+  height: 2.5rem;
+  border: 0.25rem solid white;
+  z-index: -2;
+  transition: transform 0.2s ease;
+
+
+}
+
+#mapbtn::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width : calc(100% - 0.5rem);
+  height: 2.5rem;
+  border: 0.25rem solid white;
+  background-color: #1C0E0E;
+  z-index: -1;
+  font-family: 'futura_medium', sans-serif;
 }
