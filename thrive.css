@@ -443,11 +443,11 @@ background-position: center;
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  padding: 0 2rem 0 2rem;
+  align-items: flex-start;
+
   z-index: 10;
-  overflow: scroll;
-  padding-bottom: 8rem;
+
+
 }
 #gots-btn_swipe_left {
   width: 16rem;
@@ -476,11 +476,42 @@ display: none;
 
   }
   /*slide page wrappers*/
-.testwrap1, .testwrap2 {
+.testwrap1 {
     width: 21.5rem;
     height: 100vh;
     margin: 4rem 1rem 2rem;
     padding: 1rem;
+  }
+.testwrap2 {
+    width: 21.5rem;
+    height: 100vh;
+    margin: 8rem 1rem 2rem;
+    padding-bottom: 5rem;
+  }
+
+.testwrap3 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding-bottom: 7rem;
+    padding-top: 3rem;
+  }
+  .testwrap3 > h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .testwrap3 > h1, p {
+    color: white;
+  }
+  .testwrap3 > p {
+    color: white;
+    max-width: 300px;
+    margin-top: 3rem;
+    margin-left: 0rem;
   }
 
   .gots_ingress {
@@ -495,7 +526,7 @@ display: none;
   .gots_ingress_plus_dash {
     display: flex;
     justify-content: flex-start;
-    top: 5rem;
+    top: 3rem;
     position: absolute;
     display: flex;
     align-self: flex-start;
@@ -509,13 +540,21 @@ display: none;
     font-family: 'futura_medium';
     color: #FFFFFF;
     padding: 1rem;
-    margin: 8rem 1rem 1rem;
+    margin: 10rem 1rem 1rem 2rem;
+  }
+  .gots_text_three {
+max-width: 320px;
+padding-left: 2rem;
+  }
+  .gots_text_two {
+    padding-left: 1rem;
+    padding-top: 1rem;
   }
 
   .swipebutton {
     border-style: solid;
     display: flex;
-    flex-direction: column;
+    flex-direction: column
     align-items: center;
     padding: 1rem;
     width: 100%;
@@ -528,7 +567,7 @@ display: none;
    /*slide 2*/
   .test2 {
     height: 100vh;
-    width: auto;
+    width: 100vw;;
     background-color: #76C8A8;
     min-width: 100vw;
     transition: all 1s ease;
@@ -540,7 +579,7 @@ display: none;
 
   /*headline odling*/
   .testwrap2 > h1 {
-    margin: 4rem 1rem 1rem;
+    margin: 0rem 1rem 1rem;
     width: auto;
     padding: 0;
     font-size: 3rem;
@@ -569,17 +608,17 @@ display: none;
     align-items: center;
     margin: auto;
     width: auto;
-    height: 15vh;
+    height: 20vh;
   }
   #gots-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 0;
     padding-top: 1rem;
     padding-bottom: 1rem;
     width: auto;
-    height: 20vh;
+    height: 25vh;
   }
 
 
@@ -598,7 +637,7 @@ display: none;
  .test3 {
    width: 100vw;
    height: 100vh;
-   padding: 3.5rem;
+   padding-top: 2rem;
    background-color: #76C8A8;
    min-width: 100vw;
    transition: all 1s ease;
@@ -607,6 +646,7 @@ display: none;
    justify-content: center;
    align-items: center;
    color: #FFFFFF;
+
  }
 
  /*headlines slide 3 and slide 4*/
@@ -631,11 +671,9 @@ display: none;
    transition: all 1s ease;
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: space-around;
    align-items: center;
-   color:
-   border-style: solid;
-   border-color: black;
+
  }
 
  /*text frakt */
@@ -677,7 +715,8 @@ display: none;
    overflow: hidden;
    flex-flow: row nowrap;
    display: flex;
-   overflow: scroll;
+   overflow-x: scroll;
+   overflow-y: hidden;
  }
 
  .navigationtext, .navigationpil {
