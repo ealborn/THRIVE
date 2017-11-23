@@ -23,6 +23,27 @@
 
   });
 
+  let learnMore = document.getElementById('learnMore');
+  let wrapAll = document.querySelector('.wrapall')
+  let section2 = document.querySelector('.section_2')
+  let section3 = document.querySelector('.section_3')
+  learnMore.addEventListener('click', function() {
+      let heightValue = window.innerWidth
+      if (window.innerWidth >= 1024) {
+        section3.scrollIntoView({
+          behavior: "smooth",
+          block: "end"
+        });
+      } else {
+        section2.scrollIntoView({
+          behavior: "smooth",
+          block: "end"
+        });
+      }
+
+
+  })
+
 
 
   //The following is under development script for the slideshow
