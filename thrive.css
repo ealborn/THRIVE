@@ -615,6 +615,10 @@ display: none;
    padding: 1rem;
    font-weight: normal;
  }
+/*kerning of producering text*/
+ .testwrap2 > h1 > .kerning {
+   letter-spacing: -6px;
+ }
 
  /*text producering*/
  .test3 > p {
