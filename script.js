@@ -299,7 +299,7 @@ let stopMe = false;
               let timer = setInterval(function() {
                   current += increment;
 
-                  obj.innerHTML = '&nbsp;' + current + '.000 TON &nbsp;';
+                  obj.innerHTML = '&nbsp;' + current + '.000 TON ';
                 if (current == end) {
                   console.log('hej');
                     clearInterval(timer);
