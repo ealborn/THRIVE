@@ -16,7 +16,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  /*section 5 frame div for web */
+  /*section 5 web */
   .testwrap1, .testwrap2 {
     width: 60%;
     margin: 15%;
@@ -41,6 +41,7 @@
   font-size: 2rem;
 }
 
+/*lookbook */
 .lookbook_clicked {
   height: 100vh;
   width: 100vw;
@@ -369,7 +370,7 @@
   /*GOTS WEBB*/
 
   .gots_ingress_plus_dash {
-    top: 6rem;
+    top: 5rem;
     position: absolute;
     display: flex;
     flex-flow: row-reverse nowrap;
