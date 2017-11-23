@@ -344,6 +344,23 @@
 
   /*GOTS WEBB*/
 
+  .gots_ingress_plus_dash {
+    top: 6rem;
+    position: absolute;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+
+  .blackline {
+  margin-top: 0rem;;
+  margin-right: 1.5rem;
+   width: 5rem;
+   height: 0.125rem;
+   background-color: black;
+  }
   .gots_buttons_wrap {
     position: absolute;
     width: 100vw;

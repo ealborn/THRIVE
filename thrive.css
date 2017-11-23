@@ -469,11 +469,11 @@ display: none;
     flex-direction: column;
   }
   .blackline {
-
-
+  margin-top: 1rem;
+  margin-right: 1.5rem;
    width: 5rem;
    height: 0.125rem;
-   background-color: red;
+   background-color: black;
 
   }
   /*slide page wrappers*/
@@ -685,15 +685,18 @@ display: none;
  .gots_ingress {
   font-family: 'futura_bold';
    font-weight: lighter;
+   color: white;
+   font-size: 1.5rem;
  }
 
  .gots_ingress_plus_dash {
-
+   top: 6rem;
+   position: absolute;
    display: flex;
    flex-flow: row-reverse nowrap;
    justify-content: center;
-   align-items: center;
-   width: 40rem;
+   align-items: flex-start;
+   width: auto;
  }
   /*Section 6 will be under this */
 
