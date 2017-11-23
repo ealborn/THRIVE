@@ -528,9 +528,7 @@ display: none;
 
    /*slide 2*/
   .test2 {
-    border-style: solid;
-    border-color: red;
-    height: 100%;
+    height: 100vh;
     width: auto;
     background-color: #76C8A8;
     min-width: 100vw;
@@ -588,7 +586,7 @@ display: none;
 
   /*text for cotton flower*/
   .testwrap2 > p {
-    margin: 1rem 1rem 1rem;
+    margin: 0.7rem 0.6rem 0.8rem;
     font-size: 1rem;
     display: flex;
     justify-content: center;
