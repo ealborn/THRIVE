@@ -483,24 +483,43 @@ display: none;
     margin: 1rem;
     padding: 2.5rem;
   }
-  .testwrap1 > h2 {
+  /*.testwrap1 > h2 {
     padding-top: 21%;
     padding-bottom: 10.84%;
-    font-size: 1.5rem;
-    /*text-indent: 2rem;*/
+    font-size: 5rem;
     text-align: center;
     font-family: 'futura_bold';
     color: #FFFFFF;
+  }*/
+
+  /*samma som ovan som är utkommenterad*/
+  .gots_ingress {
+   font-family: 'futura_bold';
+    font-weight: lighter;
+    color: red;
+    font-size: 1.5rem;
+    text-align: center;
   }
-   .testwrap1 > p {
+
+  .gots_ingress_plus_dash {
+    top: 6rem;
+    position: absolute;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: auto;
+  }
+  .gots_text {
     font-size: 1rem;
     font-family: 'futura_medium';
     color: #FFFFFF;
-    padding-bottom: 10.84%;
+    padding: 1rem;
+    margin: 8rem 1rem 1rem;
   }
+
   .swipebutton {
     border-style: solid;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -682,22 +701,8 @@ display: none;
  .gots {
    margin-left: 0.75rem;
  }
- .gots_ingress {
-  font-family: 'futura_bold';
-   font-weight: lighter;
-   color: white;
-   font-size: 1.5rem;
- }
 
- .gots_ingress_plus_dash {
-   top: 6rem;
-   position: absolute;
-   display: flex;
-   flex-flow: row-reverse nowrap;
-   justify-content: center;
-   align-items: flex-start;
-   width: auto;
- }
+
   /*Section 6 will be under this */
 
   .section_6 {
