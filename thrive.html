@@ -15,6 +15,17 @@
 
 </head>
 <body>
+  <script>
+
+    document.body.classList.add('fadeout');
+    setTimeout(function() {
+    document.body.classList.remove('fadeout');
+  }, 200);
+
+
+
+
+  </script>
 
 <!-- the div "wrapall" wraps everything and will always be the last closing div in the end of the html -->
 
@@ -288,25 +299,40 @@ Vi på T H R I V E arbetar med små handplockade kollektioner och väljer bara u
 <!-- Section 9 starts here -->
 
 <div class="sections section_9">
+  <div class="bg_image">
   <h2>Handla rättvist nu!</h2>
-  <div id="toWebshop"><a href=""class="knapp" >TILL WEBBUTIKEN</a></div>
+  <div id="toWebshop"><a href=""class="knapp w12" >TILL WEBBUTIKEN</a></div>
+  </div>
 </div>
+
 
 
  <!-- Section 10 starts here -->
 
  <div class="sections section_10">
      <div class="pageUpper">
-         <img class="map" src="map1.png" alt="Map image">
-         <div id="shopLocation"><a href=""class="knapp" >HÄR FINNS VI</a></div>
+         <div id="shopLocation"><a class="knapp w12" >HÄR FINNS VI</a></div>
      </div>
        <div class="pageLower">
          <p>Gå in på våran webbbutik och handla rättvist idag! Bor du i Göteborg har vi en butik i centrala Haga, på <span class="greentext">Södra Allégatan 11</span>.</p>
          <h3>Välkommen in!</h3>
+         <a href="http://www.thrivestore.se">
+         <svg class="triangle" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px"
+         	 height="300px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+
+         <g id="Layer_2">
+         	<path class="trianglepath"  d="M11.472,275
+         		L58.2,194.477L150.277,35.8l94.418,162.732L289.058,275H11.472z M242.947,196.082H57.582 M150.264,196.351V275"/>
+         </g>
+         </svg>
+       </a>
      </div>
    </div>
 
  </div>
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <script src="script.js" charset="utf-8"></script>
