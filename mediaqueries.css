@@ -342,6 +342,56 @@
     opacity: 0.7;
   }
 
+  /*GOTS WEBB*/
+
+  .gots_buttons_wrap {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem 0 2rem;
+    z-index: 10;
+    overflow: scroll;
+    padding: 0 6rem 0 6rem;
+  }
+  #gots-btn_swipe_left {
+    display: none;
+  }
+
+  #gots-btn_swipe_left_webb {
+    width: auto;
+    display: flex;
+  }
+
+  #gots-btn_swipe_right {
+  width: auto;
+  display: flex;
+  }
+
+  .navigationbar {
+    position: absolute;
+    bottom: 3rem;
+    width: 55vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    background-color: #1C0E0E;
+    overflow: scroll;
+    color: white;
+    z-index: 1000;
+    border-radius: 20px;
+  }
+
+  .navigationtext, .navigationpil {
+   color: #76C8A8;
+   margin-right: 1.5rem;
+   transition: all .3s ease;
+   font-size: .75rem;
+   letter-spacing: 1px;
+  }
   /*Infographics webb*/
 
   .info_buttons_wrap {
@@ -434,7 +484,7 @@
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
-    padding-top: 0rem;
+    padding-top: 4rem;
   }
 
 

@@ -217,7 +217,7 @@ let stopMe = false;
       }
         if (secNine <= 40) {
         frameLogo.style.color = "white";
-        document.querySelector('.logobottom').style.opacity = "1";
+        document.querySelector('.logobottom').style.opacity = "0.5";
         for (frames of frameDash) {
           frames.style.backgroundColor = "white";
         }
@@ -319,11 +319,17 @@ $('#info-btn_right, #info-btn_left').click(function() {
 
   //GOTS BUTTONS SLIDER
 
-$('#gots-btn_swipe').click(function() {
+$('#gots-btn_swipe_left, #gots-btn_swipe_right, #gots-btn_swipe_left_webb').click(function() {
   let secSix = document.querySelector('.section_6');
   let gotsSlideWidth = document.querySelector('.navigationwrap');
   let widthValue = window.innerWidth;
-  if ($(this).is("#gots-btn_swipe")) {
+  if ($(this).is("#gots-btn_swipe_left") && window.innerWidth <= 400) {
+    gotsSlideWidth.scrollBy(widthValue, 0);
+  } else {
+    gotsSlideWidth.scrollBy(-widthValue, 0);
+  }
+
+  if ($(this).is("#gots-btn_swipe_right")) {
     gotsSlideWidth.scrollBy(widthValue, 0);
   }
 
@@ -380,7 +386,8 @@ setTimeout(function() {
   pageUpper.style.backgroundImage = "none";
   pageUpper.innerHTML = iframe;
   pageUpper.style.opacity = "1";
-}, 100);
+  iframe.style.opacity = "0.85"
+}, 500);
 
 //thrivelogo
 let triangle = document.querySelector('.trianglepath');
@@ -388,6 +395,6 @@ let triangle = document.querySelector('.trianglepath');
 setTimeout(function() {
   triangle.classList.add('trianglepath_trig');
 
-}, 1800);
+}, 1400);
 console.log(triangle.getTotalLength());
 });
