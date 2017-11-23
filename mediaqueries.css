@@ -16,29 +16,64 @@
 }
 
 @media screen and (min-width: 768px) {
+
   /*section 5 web */
-  .testwrap1, .testwrap2 {
-    width: 60%;
+  .testwrap1 {
+    width: 62%;
     margin: 15%;
-    padding-left: 5%;
+    padding: 0;
   }
 
-  .testwrap2 > h1 {
-    color: red;
-    font-size: 3rem;
-  }
-  .testwrap2 > p {
-    color: red;
-    font-size: 2rem;
-    color: blue;
+  .testwrap2 {
+    width: 60%;
+    margin: 11rem 1rem;
+    padding: 0;
   }
 
   /*GOTS web first page text*/
-.testwrap1 > .gots_text {
-  margin-top: 20%;
-  padding-bottom: 20%;
-  width: 100%;
-  font-size: 2rem;
+.gots_text {
+    font-size: 1.5rem;
+    font-family: 'futura_medium';
+    line-height: 1.75rem;
+    color: #FFFFFF;
+    padding: 3%;
+    margin: 8rem 1rem 1rem;
+}
+
+/*slide 2,3,4 headers */
+.testwrap2 > h1 {
+    font-size: 3rem;
+    margin: 1rem 1rem 1rem;
+}
+
+#cotton {
+display: flex;
+justify-content: center;
+align-items: flex-end;
+margin: auto;
+padding: 0% 0% 1rem;
+width: auto;
+height: 41%;
+}
+
+#t-shirt {
+  height: 30%;
+}
+
+/*text under bilder*/
+.testwrap2 > p {
+    margin: 0;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    line-height: 1.75rem;
+    align-items: center;
+    font-family: 'futura_medium';
+    color: #FFFFFF;
+}
+
+.testwrap2 > .produce_text {
+  line-height: 1.75rem;
 }
 
 /*lookbook */
@@ -373,19 +408,30 @@
     top: 5rem;
     position: absolute;
     display: flex;
-    flex-flow: row-reverse nowrap;
     justify-content: center;
     align-items: center;
     width: auto;
+    align-self: center;
+  }
+
+.gots_ingress {
+    font-family: 'futura_bold';
+    font-weight: lighter;
+    margin: 0.5rem;
+    color: #FFFFFF;
+    width: 75%;
+    font-size: 1.5rem;
+    text-align: center;
   }
 
   .blackline {
-  margin-top: 0rem;
-  margin-right: 1.5rem;
-   width: 5rem;
-   height: 0.125rem;
-   background-color: black;
+    margin-top: 0rem;
+    margin-right: 1.5rem;
+    width: 5rem;
+    height: 0.125rem;
+    background-color: black;
   }
+
   .gots_buttons_wrap {
     position: absolute;
     width: 100vw;
