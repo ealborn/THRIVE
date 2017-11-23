@@ -832,6 +832,7 @@ display: none;
    #tons {
      margin-bottom: 0.5rem;
      padding-left: 1rem;
+     margin-right: 1rem;
    }
 
 
@@ -1146,7 +1147,7 @@ opacity: 1;
   fill: none;
   stroke-dasharray: 1094;
   stroke-dashoffset: 1094;
-  transition: stroke-dashoffset 1.5s ease, stroke .2s ease, transform .7s ease-in-out .6s;
+  transition: stroke-dashoffset 1.5s ease, stroke .2s ease, transform 1s ease .6s;
 }
 
 
