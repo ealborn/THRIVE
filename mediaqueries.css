@@ -752,5 +752,65 @@ height: 41%;
     cursor: pointer;
     transition: transform .1s ease opacity .2s ease;
   }
+.footer_wrap {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-flow: row-reverse;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+  .social_media_wrap {
+    width: auto;
+    height: auto;
 
+    bottom: 1rem;
+    right: 5%;
+    display: flex;
+    padding-left: 1rem;
+  }
+
+  .social {
+    margin-right: 1.5rem;
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+
+  .footerlink {
+
+    font-size: 16px;
+    padding-left: 0rem;
+    letter-spacing: 2px;
+  }
+
+  .footerlink:hover {
+    color: #76C8A8;
+  }
+  #copyright {
+    opacity: 0.5;
+    font-size: 10px;
+
+    padding-left: 1rem;
+
+  }
+  .FB, .IG, .TW {
+    transition: all .3 ease;
+    opacity: .5;
+  }
+
+  .FB:hover .facebookpath {
+    fill: #76C8A8;
+    opacity: 1;
+
+  }
+
+  .IG:hover .instagram_path {
+    fill: #76C8A8;
+    opacity: 1;
+  }
+  .TW:hover .twitterpath {
+    fill: #76C8A8;
+    opacity: 1;
+  }
 }

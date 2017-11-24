@@ -18,7 +18,7 @@
       let hideButton = document.querySelector("#lookbookbtn");
       $(this).toggleClass("lookbook_clicked");
       $(this).siblings().toggleClass("lookbook_opacity");
-      $('#lookbookbtn').fadeToggle('slow');
+      $('#lookbookbtn').css("opacity", "0");
     });
 
   });
@@ -243,10 +243,9 @@ let stopMe = false;
           frames.style.backgroundColor = "white";
         }
       }
-        if (secTen <= 20 ) {
+        if (secTen <= 20  ) {
         frameLogo.style.color = "white";
-
-        document.querySelector('.logobottom').style.opacity = "0.5";
+        document.querySelector('.logobottom').style.display = "none";
         for (frames of frameDash) {
           frames.style.backgroundColor = "white";
         }
@@ -299,7 +298,7 @@ let stopMe = false;
               let timer = setInterval(function() {
                   current += increment;
 
-                  obj.innerHTML = '&nbsp;' + current + '.000 TON ';
+                  obj.innerHTML = '&nbsp;' + current + '.000 TON&nbsp;+ ';
                 if (current == end) {
                   console.log('hej');
                     clearInterval(timer);
@@ -316,8 +315,20 @@ let stopMe = false;
                   stopMe = true;
                 }
 
+let infoThree = $('.infographics_3');
 
+  let xPosOffset_three = $('.slide_three').offset();
+      if (xPosOffset_three['left'] == 0) {
+        setTimeout(function() {
+          infoThree.css("opacity", "1");
+
+        }, 200);
+
+      }
+  console.log(xPosOffset_three['left']);
         });
+
+
 
 
 
