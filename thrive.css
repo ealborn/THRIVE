@@ -32,7 +32,7 @@ body {
 
 @font-face {
   font-family: 'futura_light';
-  src: url('Fonts/futura_light.ttf');
+  src: url('Fonts/Futura_light.ttf');
 }
 
 @font-face {
@@ -48,6 +48,7 @@ h1 {
   margin: 0;
   font-family: 'Parabola';
   user-select: none;
+
 
 }
 h2 {
@@ -281,7 +282,7 @@ z-index: 10;
 /*Section 4 - lookbook follows*/
 #lookbookbtn {
 z-index: 10;
-transition: opacity .4s ease;
+
 }
 
 .lookbook_btn_wrap {
@@ -508,7 +509,7 @@ display: none;
     margin-top: 2rem;
     margin-bottom: 1.5rem;
   }
-  .testwrap3 > h1, p {
+  .testwrap3 > h1 > p {
     color: white;
   }
   .testwrap3 > p {
@@ -972,7 +973,7 @@ padding-left: 2rem;
     width: 5rem;
     margin-bottom: 0.5rem;
     transition: opacity .1s, transform .1s ease;
-    cursor: pointer;
+    
   }
   .symbol:hover{
     opacity: .5;
@@ -1287,11 +1288,12 @@ svg.triangle:hover .trianglepath {
   opacity: 0.5;
 }
 
-.footerlink {
+.footerlink a {
 opacity: 0.5;
 font-size: 10px;
 padding-left: 1rem;
-
+text-decoration: none;
+color: white;
 }
 #copyright {
   opacity: 0.5;
@@ -1304,4 +1306,13 @@ padding-left: 1rem;
 .social_icon {
   fill: white;
   transition: all .2s ease;
+}
+
+#symbol_org {
+  margin-bottom: 0.20rem;
+}
+#footer_link {
+  text-decoration: none;
+  COLOR: white;
+  OPACITY: 0.5;
 }

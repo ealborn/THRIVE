@@ -83,7 +83,7 @@ padding-left: 2rem;
     margin-top: 4rem;
     margin-bottom: 1.5rem;
   }
-  .testwrap3 > h1, p {
+  .testwrap3 > h1 > p {
     color: white;
   }
   .testwrap3 > p {
@@ -218,7 +218,7 @@ height: 41%;
   font-weight: lighter;
   font-size: 6.5rem;
   line-height: 1;
-  margin-top: 0rem;
+  margin-top: 2rem;
 
 
 }
@@ -752,6 +752,10 @@ height: 41%;
     margin-bottom: 0.5rem;
     cursor: pointer;
     transition: transform .1s ease opacity .2s ease;
+  }
+  .symbol:hover{
+    opacity: .5;
+    transform: scale(1.05)
   }
 .footer_wrap {
   width: 100vw;

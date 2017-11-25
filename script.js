@@ -18,7 +18,7 @@
       let hideButton = document.querySelector("#lookbookbtn");
       $(this).toggleClass("lookbook_clicked");
       $(this).siblings().toggleClass("lookbook_opacity");
-      $('#lookbookbtn').css("opacity", "0");
+      $('#lookbookbtn').css("display", "none");
     });
 
   });
@@ -267,7 +267,7 @@ let stopMe = false;
 
                 obj.innerHTML = current + '%';
               if (current == end) {
-                console.log('hej');
+
                   clearInterval(timer);
               }
             }, stepTime);
@@ -278,7 +278,7 @@ let stopMe = false;
           pieChart.classList.add('circletrig');
           animatePercentage("value", 0, 98, 1500);
           stopMe = true;
-          console.log('stopMe');
+
         }
 
       });
@@ -298,9 +298,9 @@ let stopMe = false;
               let timer = setInterval(function() {
                   current += increment;
 
-                  obj.innerHTML = '&nbsp;' + current + '.000 TON&nbsp;+ ';
+                  obj.innerHTML = '&nbsp;' + current + '.000 TON&nbsp;';
                 if (current == end) {
-                  console.log('hej');
+
                     clearInterval(timer);
                 }
               }, stepTime);
@@ -308,7 +308,7 @@ let stopMe = false;
 
                let infoTwo = $('.infographics_2');
                 let xPosOffset = $('.slide_two').offset();
-                console.log(xPosOffset['left']);
+
                 if (xPosOffset['left'] == 0  ) {
                   infoTwo.css("opacity", "1");
                   animatePercentage("value", 0, 50, 1300);
@@ -325,7 +325,7 @@ let infoThree = $('.infographics_3');
         }, 200);
 
       }
-  console.log(xPosOffset_three['left']);
+
         });
 
 
@@ -431,5 +431,5 @@ setTimeout(function() {
   triangle.classList.add('trianglepath_trig');
 
 }, 1400);
-console.log(triangle.getTotalLength());
+
 });
